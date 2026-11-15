@@ -2,7 +2,7 @@
 
 A single static page: `index.html`, `styles.css`, `main.js`, `favicon.svg` and `img/`. No build step, no frameworks, no external requests.
 
-Every image in `img/` is a real screenshot from the PsiCoda diary (github.com/danieledge/PsiCoda), or from the public PsiLinux repo for the Linux section, saved as lossless palette PNGs. Screenshots shown larger than their own size are switched to `image-rendering: pixelated` by `main.js`, so they stay crisp.
+Every image in `img/` is a real screenshot of the netBook's screen, taken in the netBook emulator or shown in the PsiCoda diary (github.com/danieledge/PsiCoda), saved as lossless palette PNGs. Screenshots shown larger than their own size are switched to `image-rendering: pixelated` by `main.js`, so they stay crisp.
 
 ## Preview locally
 
