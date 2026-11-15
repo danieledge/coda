@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coda for the Psion netBook</title>
+<meta name="description" content="Coda is Dan Edge's new edition of the Psion netBook's operating system. Themes, a launcher, new programs, modern internet, real Linux and hundreds of fixes, finishing what Psion didn't.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Coda for the Psion netBook">
+<meta property="og:description" content="Finishing what Psion didn't. A new edition of the netBook's operating system by Dan Edge.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/system-coda.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <nav class="nav-inner" aria-label="Main">
+    <a class="brand" href="#top" aria-label="Coda, back to top"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="6"><ellipse cx="32" cy="32" rx="11" ry="16"/><path d="M32 6v52M10 32h44"/></g></svg>Coda</a>
+    <ul class="nav-links">
+      <li><a href="#look">Look</a></li>
+      <li><a href="#toolbar">Toolbar</a></li>
+      <li><a href="#psihub">PsiHub</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#internet">Internet</a></li>
+      <li><a href="#linux">Linux</a></li>
+      <li><a href="#details">Details</a></li>
+    </ul>
+    <a class="nav-cta" href="https://github.com/danieledge/PsiCoda">Read the diary</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero dark" aria-labelledby="hero-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Coda for the Psion netBook</p>
+    <h1 id="hero-title" class="reveal">Finishing what<br>Psion didn't.</h1>
+    <p class="lede reveal">The netBook shipped in 1999 with software that was never quite done. Coda is a new edition of its operating system, by Dan Edge. Same machine. Finished.</p>
+    <p class="cta-row reveal">
+      <a class="btn" href="#look">See what's new</a>
+      <a class="link-arrow" href="https://github.com/danieledge/PsiCoda">Read the diary</a>
+    </p>
+    <div class="device reveal">
+      <div class="bezel">
+        <div class="screen">
+          <img src="img/system-coda.png" width="640" height="480" alt="The netBook's System screen in Coda: the Documents bar, program icons, the Coda shapes wallpaper and the new toolbar with battery percentage, free memory, brightness and the clock." fetchpriority="high">
+        </div>
+      </div>
+      <div class="deck" aria-hidden="true"></div>
+    </div>
+    <p class="caption">Every picture on this page is a real screenshot, straight from the screen.</p>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story light" id="story" aria-labelledby="story-title">
+  <div class="wrap narrow">
+    <p class="eyebrow reveal">The story</p>
+    <h2 id="story-title" class="reveal">A 1999 machine.<br>Left unfinished.</h2>
+    <p class="body-lg reveal">The netBook is a clamshell with a 640 by 480 colour screen, a 190 MHz StrongARM and a CompactFlash slot. Its software, EPOC, was written for the Series 5: half the height and 16 greys. A lot of it came across as it was.</p>
+    <p class="body-lg reveal">You notice. Programs draw a half height layout in the middle of the screen. Icons are grey or dithered. Time's map is bright green on navy. The clock is yellow. None of it stops the machine working. Together it feels half done.</p>
+    <p class="body-lg reveal">Coda goes through it all, one piece at a time, and adds what a netBook should have had.</p>
+  </div>
+  <div class="wrap">
+    <ul class="stats reveal">
+      <li><strong>640 × 480</strong><span>the whole screen, put to use</span></li>
+      <li><strong>256</strong><span>colours, used properly</span></li>
+      <li><strong>123,000</strong><span>British words added to the dictionary</span></li>
+      <li><strong>1 file</strong><span>on the card. Psion's own sits beside it.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- LOOK AND THEMES -->
+<section class="look light alt" id="look" aria-labelledby="look-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Look and themes</p>
+    <h2 id="look-title" class="reveal">Six themes.<br>One of them Dark.</h2>
+    <p class="body-lg narrow-text reveal">Pick a theme in the Control panel and watch a preview before you commit. The toolbar, the Documents bar, the wallpaper and both clocks follow along. Every colour comes from the screen's steady palette, so nothing shimmers.</p>
+
+    <figure class="ba reveal">
+      <div class="ba-stage">
+        <img class="ba-before" src="img/system-coda.png" width="640" height="480" alt="The System screen in Coda's standard theme." loading="lazy" decoding="async">
+        <img class="ba-after" src="img/system-dark.png" width="640" height="480" alt="The same System screen in the Dark theme, with the wallpaper repainted to match." loading="lazy" decoding="async">
+        <span class="ba-label left">Coda</span><span class="ba-label right">Dark</span>
+        <span class="ba-handle" aria-hidden="true"></span>
+        <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the Coda theme and the Dark theme">
+      </div>
+      <figcaption>Drag to switch the System screen from Coda to Dark.</figcaption>
+    </figure>
+
+    <figure class="frame wide reveal">
+      <img src="img/themes-six.png" width="1035" height="510" alt="The Themes dialog shown in each of the six themes: Classic, Slate, Graphite, Teal, Dark and the soft clock theme that became Coda." loading="lazy" decoding="async">
+      <figcaption>Coda, Classic, Slate, Graphite, Teal and Dark. Each one previewed in the Themes dialog.</figcaption>
+    </figure>
+
+    <div class="grid three">
+      <article class="card reveal">
+        <img src="img/name-box.png" width="900" height="220" alt="The top of the toolbar on the System screen and in Word: Psion's, then Coda's, then Coda's Dark." loading="lazy" decoding="async">
+        <h3>A name box that fits</h3>
+        <p>The program's name at the top of the toolbar is shorter, raised like the buttons, and in the theme's own colours.</p>
+      </article>
+      <article class="card reveal">
+        <img src="img/documents-bar.png" width="168" height="360" alt="The Documents bar in Psion's navy, Coda's navy and Dark's charcoal." loading="lazy" decoding="async" class="tall">
+        <h3>The Documents bar</h3>
+        <p>The strip down the left of the System screen is painted in the theme. It used to stay navy whatever you chose.</p>
+      </article>
+      <article class="card reveal">
+        <img src="img/themes-exact.png" width="688" height="592" alt="The Themes dialog with the tick box Psion's exact colours." loading="lazy" decoding="async">
+        <h3>Psion's exact colours</h3>
+        <p>Psion asked for button colours the palette didn't have. Coda tunes the screen so Classic shows the blue greys Psion meant.</p>
+      </article>
+    </div>
+
+    <div class="grid two">
+      <figure class="ba reveal">
+        <div class="ba-stage">
+          <img class="ba-before" src="img/menu-before.png" width="800" height="600" alt="Psion's Edit menu with a black highlight." loading="lazy" decoding="async">
+          <img class="ba-after" src="img/menu-after.png" width="800" height="600" alt="Coda's Edit menu with a navy highlight." loading="lazy" decoding="async">
+          <span class="ba-label left">Psion</span><span class="ba-label right">Coda</span>
+          <span class="ba-handle" aria-hidden="true"></span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare Psion's and Coda's menu highlight">
+        </div>
+        <figcaption>Highlights in Psion's title bar navy, not the black of the old grey screens.</figcaption>
+      </figure>
+      <figure class="ba reveal">
+        <div class="ba-stage">
+          <img class="ba-before" src="img/calendar-before.png" width="900" height="376" alt="Agenda's pop up calendar on Dark before: white digits on pale cyan." loading="lazy" decoding="async">
+          <img class="ba-after" src="img/calendar-after.png" width="900" height="376" alt="Agenda's pop up calendar on Dark in Coda: black digits, easy to read." loading="lazy" decoding="async">
+          <span class="ba-label left">Before</span><span class="ba-label right">Coda</span>
+          <span class="ba-handle" aria-hidden="true"></span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare Agenda's calendar on Dark before and after">
+        </div>
+        <figcaption>Dark, done properly. Agenda's calendar, the Control panel and the Extras bar all read clearly.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- WALLPAPERS -->
+<section class="wallpapers dark" id="wallpapers" aria-labelledby="wall-title">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow reveal">Wallpapers</p>
+        <h2 id="wall-title" class="reveal">Drawn in your theme.</h2>
+        <p class="body-lg reveal">Five new wallpapers: Coda, Coda psi, Coda hills, Coda sweep and Coda shapes. Each is big flat shapes in the theme's own colours, kept clear of your files, and repainted the moment you change theme. Psion's logo is still there as Psion EPOC, on a ground that matches.</p>
+        <p class="body reveal">Chosen the usual way, in the System screen's Preferences.</p>
+      </div>
+      <figure class="frame reveal">
+        <img src="img/wallpaper-coda.png" width="660" height="660" alt="The Coda wallpaper: an upright oval crossed by an upright and a level line, on a quiet pale disc." loading="lazy" decoding="async">
+        <figcaption>The coda sign, the standard wallpaper.</figcaption>
+      </figure>
+    </div>
+    <figure class="frame wide md reveal">
+      <img src="img/wallpaper-list.png" width="880" height="420" alt="The wallpaper list in Preferences: Coda, Coda psi, Coda hills, Coda sweep and Psion EPOC." loading="lazy" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<!-- TOOLBAR -->
+<section class="toolbar dark deep" id="toolbar" aria-labelledby="toolbar-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">The toolbar</p>
+    <h2 id="toolbar-title" class="reveal">Everything you glance at.<br>Finally there.</h2>
+    <p class="body-lg narrow-text reveal">Battery percentage, free memory and a brightness control, on every program's toolbar. Tap the cells or drag along them to set the backlight. Hide any line you don't want in the Control panel.</p>
+    <figure class="frame center reveal">
+      <img src="img/toolbar-bottom.png" width="444" height="288" alt="The bottom of the toolbar: Psion's with just a battery and clock, then Coda's and Coda Dark's with 100%, 48.1 MB free, brightness buttons and eight level cells above the clock." loading="lazy" decoding="async" class="xl">
+      <figcaption>Psion's, then Coda and Coda Dark.</figcaption>
+    </figure>
+
+    <div class="split">
+      <div>
+        <h3 class="h3-lg reveal">A clock you can read.</h3>
+        <p class="body reveal">Psion's toolbar clock was bright yellow, with a name printed on it nobody could make out. Both faces are redrawn with solid greys, a lit bezel and hour marks that sit on whole pixels. Coda gives it a pale cream face. Classic keeps the yellow. Tap it for digital, now in the theme's colours too.</p>
+        <figure class="frame reveal">
+          <img src="img/clock-digital.png" width="444" height="160" alt="The digital clock in Psion's grey, Coda's colours and Coda Dark." loading="lazy" decoding="async">
+        </figure>
+      </div>
+      <figure class="ba small reveal">
+        <div class="ba-stage">
+          <img class="ba-before" src="img/clock-psion.png" width="204" height="216" alt="Psion's yellow clock face with a smudged name." loading="lazy" decoding="async">
+          <img class="ba-after" src="img/clock-coda.png" width="204" height="216" alt="Coda's cream clock face with PSION legible." loading="lazy" decoding="async">
+          <span class="ba-label left">Psion</span><span class="ba-label right">Coda</span>
+          <span class="ba-handle" aria-hidden="true"></span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare Psion's and Coda's clock face">
+        </div>
+      </figure>
+    </div>
+
+    <figure class="frame wide md reveal">
+      <img src="img/toolbar-panel.png" width="1120" height="480" alt="Control panel, Toolbar: tick boxes to show the battery charge, the free memory and the brightness controls." loading="lazy" decoding="async">
+      <figcaption>Control panel, Toolbar. Hide all three and it takes no room at all.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- PSIHUB -->
+<section class="psihub dark" id="psihub" aria-labelledby="hub-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">PsiHub</p>
+    <h2 id="hub-title" class="reveal">Ctrl+Menu.<br>Then anything.</h2>
+    <p class="body-lg narrow-text reveal">A launcher over whatever you're doing. Open programs come first, most recent at the top, so Ctrl+Menu then Enter flips you back. Start typing and it searches programs, settings, files and commands at once, and learns what you use.</p>
+    <figure class="frame wide md reveal">
+      <img src="img/hub-search.png" width="950" height="380" alt="PsiHub after typing psi, listing PsiStart, PsiView, PsiHub preferences and About PsiHub." loading="lazy" decoding="async">
+    </figure>
+    <ul class="chips reveal" aria-label="Examples of PsiHub's forgiving search">
+      <li><kbd>wo</kbd> Word</li>
+      <li><kbd>mail</kbd> PsiMail</li>
+      <li><kbd>pw</kbd> PsiWeb</li>
+      <li><kbd>agnd</kbd> Agenda</li>
+      <li><kbd>term</kbd> Linux shell</li>
+      <li><kbd>?</kbd> every command</li>
+    </ul>
+    <div class="grid two">
+      <figure class="frame reveal">
+        <img src="img/hub-list.png" width="1000" height="600" alt="PsiHub listing System, Word, Sheet, Data, Agenda, Time, Calc and Sketch with icons." loading="lazy" decoding="async">
+        <figcaption>Every program, every Control panel item, and commands for restart, switch off, brightness and a screenshot.</figcaption>
+      </figure>
+      <figure class="frame reveal">
+        <img src="img/name-tap.png" width="640" height="240" alt="Word with PsiHub opened by a tap on the toolbar's name box." loading="lazy" decoding="async">
+        <figcaption>Or tap the program's name on the toolbar. Tap again and it goes away.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- NEW PROGRAMS -->
+<section class="programs light" id="programs" aria-labelledby="programs-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">New programs</p>
+    <h2 id="programs-title" class="reveal">The programs Psion<br>would have made.</h2>
+    <p class="body-lg narrow-text reveal">Not modern apps dropped onto an old machine. Psion's own programs, rebuilt for the netBook's whole screen, with the same menus, keys and files.</p>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3 class="h3-lg reveal">PsiCalc</h3>
+        <p class="body reveal">Calc drew the Series 5's calculator in the middle of the screen, like it had come through the letterbox. PsiCalc is the same calculator laid out again for 640 by 480. The till roll, the memories, the Scientific view, the odd percentage key, even the way it writes numbers. Every key is Calc's own raised keycap, drawn larger with crisp edges.</p>
+      </div>
+      <figure class="ba reveal">
+        <div class="ba-stage">
+          <img class="ba-before" src="img/calc-desk-before.png" width="1280" height="960" alt="Psion's Calc in the middle of the screen with empty space around it." loading="lazy" decoding="async">
+          <img class="ba-after" src="img/psicalc-desk.png" width="1280" height="960" alt="PsiCalc filling the screen, with a till roll, large display and big keys." loading="lazy" decoding="async">
+          <span class="ba-label left">Calc</span><span class="ba-label right">PsiCalc</span>
+          <span class="ba-handle" aria-hidden="true"></span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare Calc and PsiCalc">
+        </div>
+      </figure>
+    </div>
+    <div class="grid two">
+      <figure class="frame reveal">
+        <img src="img/psicalc-sci.png" width="1280" height="960" alt="PsiCalc's Scientific view showing 2+3×4 equals 14." loading="lazy" decoding="async">
+        <figcaption>The Scientific view.</figcaption>
+      </figure>
+      <figure class="frame reveal">
+        <img src="img/psicalc-sci-dark.png" width="1280" height="960" alt="PsiCalc's Scientific view in the Dark theme." loading="lazy" decoding="async">
+        <figcaption>And in Dark.</figcaption>
+      </figure>
+    </div>
+
+    <div class="feature reverse">
+      <div class="feature-text">
+        <h3 class="h3-lg reveal">PsiSketch</h3>
+        <p class="body reveal">The screen shows 256 colours. Sketch let you pick 16. PsiSketch opens all of them, laid out like the colour wheel unrolled, with your recent colours, the colour's name and a picker that takes a colour straight off your drawing. The drawing uses the whole screen, zooms to eight times, and exports to PNG. Its files are Sketch files, both ways.</p>
+      </div>
+      <figure class="ba reveal">
+        <div class="ba-stage">
+          <img class="ba-before" src="img/sketch-colour-before.png" width="1280" height="960" alt="Sketch's Colour tool: a single list of 16 named colours." loading="lazy" decoding="async">
+          <img class="ba-after" src="img/psisketch-colour.png" width="1280" height="960" alt="PsiSketch's Colour tool: a chart of every colour by hue and lightness, greys, recent colours and Spring green chosen." loading="lazy" decoding="async">
+          <span class="ba-label left">Sketch</span><span class="ba-label right">PsiSketch</span>
+          <span class="ba-handle" aria-hidden="true"></span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare Sketch's and PsiSketch's colour tool">
+        </div>
+      </figure>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3 class="h3-lg reveal">PsiView</h3>
+        <p class="body reveal">A picture viewer for PNG, JPEG, GIF and BMP. Tap a picture on the System screen and it opens, fitted to the screen, ready to zoom, pan and step through the folder. Each photo gets its own 256 colours, picked for that photo.</p>
+      </div>
+      <figure class="ba reveal">
+        <div class="ba-stage">
+          <img class="ba-before" src="img/psiview-epoc.png" width="540" height="400" alt="A photo of two parrots in EPOC's fixed palette, blotchy and banded." loading="lazy" decoding="async">
+          <img class="ba-after" src="img/psiview-own.png" width="540" height="400" alt="The same parrots in 256 colours chosen for the photo, smooth and natural." loading="lazy" decoding="async">
+          <span class="ba-label left">Fixed palette</span><span class="ba-label right">Its own</span>
+          <span class="ba-handle" aria-hidden="true"></span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the fixed palette and the photo's own palette">
+        </div>
+      </figure>
+    </div>
+
+    <div class="note-card reveal">
+      <img src="img/programs.png" width="960" height="332" alt="Control panel, Programs: choose Psion's Calc or PsiCalc, and Psion's Sketch or PsiSketch." loading="lazy" decoding="async">
+      <p>Prefer Psion's originals? Control panel, Programs puts them back on the icons. The other one waits on the Extras bar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OFFICE FORMATS
+     Typographic for now. When screenshots land, uncomment the
+     .office-shots figure at the end of this block and point it at them. -->
+<section class="office light alt" id="office" aria-labelledby="office-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Office formats</p>
+    <h2 id="office-title" class="reveal">Open the file.<br>On the netBook.</h2>
+    <p class="body-lg narrow-text reveal">Word and Sheet open and save Microsoft's formats and others on the netBook itself. It's built into the ROM. No PC needed.</p>
+    <div class="formats reveal">
+      <div class="format-col">
+        <h3>Word</h3>
+        <ul class="ext-list">
+          <li>.docx</li><li>.doc</li><li>.rtf</li><li>.txt</li>
+        </ul>
+      </div>
+      <div class="format-col">
+        <h3>Sheet</h3>
+        <ul class="ext-list">
+          <li>.xlsx</li><li>.xls</li><li>.csv</li>
+        </ul>
+      </div>
+    </div>
+    <p class="body narrow-text center-text reveal">Tap a .docx or .xlsx on the System screen and it opens straight in Word or Sheet. The formats are there in Save as, too.</p>
+    <!--
+    <figure class="frame wide reveal office-shots">
+      <img src="img/office-word-docx.png" width="1280" height="960" alt="Word with a .docx document open." loading="lazy" decoding="async">
+      <figcaption>A .docx, opened in Word.</figcaption>
+    </figure>
+    -->
+  </div>
+</section>
+<!-- /OFFICE FORMATS -->
+
+<!-- REFRESHED BUILT IN PROGRAMS -->
+<section class="review light" id="review" aria-labelledby="review-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Psion's programs, refreshed</p>
+    <h2 id="review-title" class="reveal">The rushed parts.<br>Done again.</h2>
+    <p class="body-lg narrow-text reveal">Every built in program was checked for the places where the jump from the Series 5 shows. Pick one and drag.</p>
+
+    <div class="gallery reveal" data-gallery>
+      <div class="tabs" role="tablist" aria-label="Choose a comparison">
+        <button role="tab" aria-selected="true" data-b="img/record-before.png" data-a="img/record-after.png" data-w="1140" data-h="960" data-alt-b="Record's half height panel in the middle of the screen." data-alt-a="Record's panel filling the screen with big buttons and a full height volume slider." data-cap="Record fills the screen: buttons 68 pixels high, a bigger position display and a full height volume slider.">Record</button>
+        <button role="tab" aria-selected="false" data-b="img/map-before.png" data-a="img/map-after.png" data-w="600" data-h="360" data-alt-b="Time's world map in bright green on navy with staircase coastlines." data-alt-a="Time's new world map: blue sea, soft green land and fine coastlines." data-cap="Time's map, redrawn from Natural Earth in exactly the old projection, so every city still lands in the right place.">Time's map</button>
+        <button role="tab" aria-selected="false" data-b="img/desk-before.png" data-a="img/desk-after.png" data-w="640" data-h="480" data-alt-b="Calc on a desk of fizzy teal dots." data-alt-a="Calc on a plain desk in the theme's colour." data-cap="The desk behind Calc, Record and Spell. No more fizzing dots.">The desk</button>
+        <button role="tab" aria-selected="false" data-b="img/planner-before.png" data-a="img/planner-after.png" data-w="660" data-h="440" data-alt-b="Agenda's Year planner with past days hatched in diagonal lines." data-alt-a="The Year planner with past days in plain light grey." data-cap="Agenda's Year planner. Past days in plain grey, not a dense hatch.">Year planner</button>
+        <button role="tab" aria-selected="false" data-b="img/toolband-before.png" data-a="img/toolband-after.png" data-w="1140" data-h="100" data-alt-b="Word's toolband at 25 pixels high." data-alt-a="Word's toolband a third taller, at 33 pixels." data-cap="Word and Sheet's toolband, a third taller and easier to hit with the pen. The font name isn't cut short any more.">Toolband</button>
+        <button role="tab" aria-selected="false" data-b="img/contacts-before.png" data-a="img/contacts-after.png" data-w="668" data-h="520" data-alt-b="Contacts zoomed in with labels cut short." data-alt-a="Contacts zoomed in with every label shown in full." data-cap="Contacts shows every label in full, at every zoom.">Contacts</button>
+        <button role="tab" aria-selected="false" data-b="img/extras-before.png" data-a="img/extras-after.png" data-w="200" data-h="960" data-alt-b="The Extras bar with names drawn across the icons." data-alt-a="The Extras bar with taller cells, each icon above its name." data-cap="The Extras bar: each icon sits above its name instead of under it.">Extras bar</button>
+        <button role="tab" aria-selected="false" data-b="img/graph-before.png" data-a="img/graph-after.png" data-w="1280" data-h="960" data-alt-b="A new graph in Sheet with light grey bars." data-alt-a="A new graph in Sheet with proper blue bars." data-cap="Sheet's new graphs start in a proper blue.">Sheet graphs</button>
+        <button role="tab" aria-selected="false" data-b="img/sketch-before.png" data-a="img/psisketch.png" data-w="1280" data-h="960" data-alt-b="Psion's Sketch with a smaller picture inside a grey frame." data-alt-a="PsiSketch drawing across the whole screen beside the toolbar." data-cap="PsiSketch draws across the whole screen beside the toolbar, with Sketch's own toolbar and tools.">Sketch</button>
+        <button role="tab" aria-selected="false" data-b="img/anagrams-before.png" data-a="img/anagrams-after.png" data-w="1140" data-h="560" data-alt-b="Spell's anagrams in a small font." data-alt-a="Spell's anagrams in a larger font, including blog." data-cap="Spell's anagrams. The letters lobg now make blog.">Anagrams</button>
+        <button role="tab" aria-selected="false" data-b="img/cp-dark-before.png" data-a="img/cp-dark-after.png" data-w="1016" data-h="754" data-alt-b="The Control panel on Dark with every icon on a white tile." data-alt-a="The Control panel on Dark with the icons on a clean white ground." data-cap="The Control panel on Dark. No more white tiles on charcoal.">Dark Control panel</button>
+        <button role="tab" aria-selected="false" data-b="img/findbar-before.png" data-a="img/findbar-after.png" data-w="660" data-h="80" data-alt-b="Contacts' Find bar in startling cyan." data-alt-a="Contacts' Find bar in pale blue." data-cap="The Find bar in Data and Contacts, in the pale blue Psion asked for.">Find bar</button>
+        <button role="tab" aria-selected="false" data-b="img/contrast-before.png" data-a="img/contrast-after.png" data-w="740" data-h="78" data-alt-b="The contrast strip as 15 greys." data-alt-a="The contrast strip with greys and mid tone colours." data-cap="The contrast strip sets the screen by colours, not 15 greys from a greyscale machine.">Contrast</button>
+      </div>
+      <figure class="ba">
+        <div class="ba-stage">
+          <img class="ba-before" src="img/record-before.png" width="1140" height="960" alt="Record's half height panel in the middle of the screen." loading="lazy" decoding="async">
+          <img class="ba-after" src="img/record-after.png" width="1140" height="960" alt="Record's panel filling the screen with big buttons and a full height volume slider." loading="lazy" decoding="async">
+          <span class="ba-label left">Psion</span><span class="ba-label right">Coda</span>
+          <span class="ba-handle" aria-hidden="true"></span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare Psion and Coda">
+        </div>
+        <figcaption class="gallery-cap" aria-live="polite">Record fills the screen: buttons 68 pixels high, a bigger position display and a full height volume slider.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- INTERNET -->
+<section class="internet dark" id="internet" aria-labelledby="internet-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Internet and connectivity</p>
+    <h2 id="internet-title" class="reveal">Today's internet.<br>On a 1999 machine.</h2>
+    <p class="body-lg narrow-text reveal">Psion's Email, Opera and Comms terminal couldn't cope with the modern internet. Coda replaces them with programs that can, and the toolbar's Email and web icons open them.</p>
+    <div class="grid three">
+      <article class="card dark-card reveal">
+        <img src="img/psimail.png" width="640" height="480" alt="PsiMail asking for a mail account on first start." loading="lazy" decoding="async">
+        <h3>PsiMail</h3>
+        <p>IMAP and SMTP over TLS, with the server's certificate checked. A CalDAV calendar kept in step with Agenda.</p>
+        <a class="link-arrow" href="https://github.com/danieledge/psimail">PsiMail on GitHub</a>
+      </article>
+      <article class="card dark-card reveal">
+        <img src="img/psiweb.png" width="640" height="480" alt="PsiWeb's welcome page listing light sites that work well." loading="lazy" decoding="async">
+        <h3>PsiWeb</h3>
+        <p>A browser built on Links 2, in colour across the whole screen, with Back, Forward, Reload and the address on a toolband.</p>
+        <a class="link-arrow" href="https://github.com/danieledge/psiweb">PsiWeb on GitHub</a>
+      </article>
+      <article class="card dark-card reveal">
+        <img src="img/psiterm.png" width="640" height="480" alt="PsiTerm's SSH server dialog." loading="lazy" decoding="async">
+        <h3>PsiTerm</h3>
+        <p>SSH with SFTP and tmux support, in place of a dial up terminal and an FTP client that sent passwords in clear.</p>
+        <a class="link-arrow" href="https://github.com/danieledge/psiterm">PsiTerm on GitHub</a>
+      </article>
+    </div>
+    <div class="grid two">
+      <article class="card dark-card reveal">
+        <img src="img/internet-time.png" width="1280" height="660" alt="Control panel, Internet time: clock from the internet ticked, time server, daylight saving automatic." loading="lazy" decoding="async">
+        <h3>Internet time</h3>
+        <p>The clock set from a time server once a day, and summer time switched on the right dates for every city in Time. It can find your time zone too, if you ask.</p>
+      </article>
+      <article class="card dark-card reveal">
+        <img src="img/serialboost.png" width="1120" height="400" alt="Control panel, SerialBoost: Serial port at double speed, ticked." loading="lazy" decoding="async">
+        <h3>SerialBoost. Twice the speed.</h3>
+        <p>Psion stopped the serial port at 115,200 bps. The chip can do 230,400. Any program that asks for the old top speed gets double, with no changes to the program. On as standard. It's the netBook version of <a href="https://github.com/danieledge/psiboost">PsiBoost</a>.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- LINUX -->
+<section class="linux dark deep" id="linux" aria-labelledby="linux-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">The Linux terminal</p>
+    <h2 id="linux-title" class="reveal">Real Alpine Linux.<br>On your Psion's own files.</h2>
+    <p class="body-lg narrow-text reveal">PsiLinux runs real, unmodified Alpine Linux 3.24 programs on the netBook. It boots with BusyBox init and OpenRC, or goes straight to bash. Alpine's own apk installs Alpine's signed packages, from a catalogue of about 25,000.</p>
+
+    <figure class="frame wide terminal reveal">
+      <img src="img/linux-alpine-boot.png" width="640" height="240" alt="Alpine Linux 3.24 booting: OpenRC starting services, then a root login, with notes that /c and /d are the Psion's disks." loading="lazy" decoding="async">
+      <figcaption>Alpine booting under OpenRC. Pictured on the Series 5mx, where PsiLinux began. On the netBook it runs in colour.</figcaption>
+    </figure>
+
+    <div class="grid three facts">
+      <div class="fact reveal">
+        <h3>No Linux kernel</h3>
+        <p>PsiLinux brings its own small kernel layer on top of EPOC, much as WSL1 does on Windows. Linux programs get Linux's system calls, built on the Psion's own files, sockets and memory.</p>
+      </div>
+      <div class="fact reveal">
+        <h3>Your files, in Linux</h3>
+        <p>Linux sees the Psion's disks as <code>/c</code> and <code>/d</code>, and the ROM as <code>/z</code>. So git, ssh and editors work directly on your documents.</p>
+      </div>
+      <div class="fact reveal">
+        <h3>One word away</h3>
+        <p>Type <kbd>term</kbd>, <kbd>linux</kbd> or <kbd>shell</kbd> into PsiHub and press Enter. The terminal is PsiTerm's, in colour on the netBook.</p>
+      </div>
+    </div>
+
+    <div class="grid two">
+      <figure class="frame terminal reveal">
+        <img src="img/linux-alpine-shell.png" width="640" height="240" alt="Alpine's shell: the release 3.24.2, the root folder listing including c, d and z, and uname reporting armv6l." loading="lazy" decoding="async">
+        <figcaption><code>ls /</code> shows c, d and z beside Linux's own folders.</figcaption>
+      </figure>
+      <figure class="frame terminal reveal">
+        <img src="img/linux-fastfetch.png" width="640" height="240" alt="fastfetch reporting the Psion as its CPU, with memory and disk figures." loading="lazy" decoding="async">
+        <figcaption>fastfetch knows where it is.</figcaption>
+      </figure>
+    </div>
+    <div class="split linux-more">
+      <figure class="frame reveal">
+        <img src="img/hub-term.png" width="950" height="324" alt="PsiHub after typing term: Terminal, Linux shell at the top." loading="lazy" decoding="async">
+      </figure>
+      <div>
+        <p class="body reveal">Want more? X with a window manager, Links in graphics mode and Doom are optional installs.</p>
+        <p class="reveal"><a class="link-arrow" href="https://github.com/danieledge/psilinux">PsiLinux on GitHub</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEXT AND FONTS -->
+<section class="fonts light" id="fonts" aria-labelledby="fonts-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Text and fonts</p>
+    <h2 id="fonts-title" class="reveal">Choose your typeface.</h2>
+    <p class="body-lg narrow-text reveal">Control panel, Text offers Psion's own font, Inter, Noto Sans and DejaVu Sans. Each is redrawn at the exact pixel sizes EPOC uses and kept within 4% of Psion's widths, so every menu and dialog still fits. Psion's font can be smoothed, in a few styles.</p>
+    <figure class="frame wide reveal">
+      <img src="img/fonts-menus.png" width="1830" height="340" alt="The Tools menu shown in Psion's font, Inter and Noto Sans." loading="lazy" decoding="async">
+      <figcaption>The Tools menu in Psion's font, Inter and Noto Sans.</figcaption>
+    </figure>
+    <figure class="frame wide md reveal">
+      <img src="img/text-dialog.png" width="1280" height="560" alt="Control panel, Text: font and smoothing choices with a side by side preview." loading="lazy" decoding="async">
+      <figcaption>A side by side preview before you restart.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- SPELLING -->
+<section class="spelling light alt" id="spelling" aria-labelledby="spell-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Spelling</p>
+    <h2 id="spell-title" class="reveal">123,000 more words.<br>British ones.</h2>
+    <p class="body-lg narrow-text reveal">Psion's dictionary is from 1995. It had never heard of email, website or broadband. Coda adds about 123,000 British English words, with -ise spellings, beside Psion's own. Word checks against both. Spell uses them for suggestions, anagrams and crossword answers too.</p>
+    <div class="grid two">
+      <figure class="ba reveal">
+        <div class="ba-stage">
+          <img class="ba-before" src="img/spelling-before.png" width="560" height="320" alt="Psion's Word stopping on the word website as unknown." loading="lazy" decoding="async">
+          <img class="ba-after" src="img/spelling-after.png" width="560" height="320" alt="Coda's Word accepting website." loading="lazy" decoding="async">
+          <span class="ba-label left">Psion</span><span class="ba-label right">Coda</span>
+          <span class="ba-handle" aria-hidden="true"></span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare spelling checks in Psion and Coda">
+        </div>
+        <figcaption>"website", checked in Word.</figcaption>
+      </figure>
+      <figure class="ba reveal">
+        <div class="ba-stage">
+          <img class="ba-before" src="img/spell-before.png" width="1140" height="560" alt="Spell's alternatives for bloger in a small font, without blogger." loading="lazy" decoding="async">
+          <img class="ba-after" src="img/spell-after.png" width="1140" height="560" alt="Spell's alternatives for bloger in a larger font, including blogger." loading="lazy" decoding="async">
+          <span class="ba-label left">Psion</span><span class="ba-label right">Coda</span>
+          <span class="ba-handle" aria-hidden="true"></span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare Spell's suggestions in Psion and Coda">
+        </div>
+        <figcaption>"bloger" now offers blogger, in larger type.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- PICTURES AND ICONS -->
+<section class="icons light" id="icons" aria-labelledby="icons-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Pictures and icons</p>
+    <h2 id="icons-title" class="reveal">Sharper, everywhere.</h2>
+    <p class="body-lg narrow-text reveal">The netBook's pictures came over from the Series 5: grey, dithered, sometimes blurry. Coda cleans up 80 of them, redraws the clock faces, and offers new high resolution icons in the Control panel. Psion's stay the default.</p>
+    <div class="grid two">
+      <figure class="ba reveal">
+        <div class="ba-stage">
+          <img class="ba-before" src="img/icon-sketch-before.png" width="352" height="136" alt="Psion's dithered Sketch icon." loading="lazy" decoding="async">
+          <img class="ba-after" src="img/icon-sketch-after.png" width="352" height="136" alt="Coda's redrawn Sketch icon, crisp and in solid colours." loading="lazy" decoding="async">
+          <span class="ba-label left">Psion</span><span class="ba-label right">New</span>
+          <span class="ba-handle" aria-hidden="true"></span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the old and new Sketch icon">
+        </div>
+        <figcaption>Sketch, redrawn on the pixel grid with no dithering.</figcaption>
+      </figure>
+      <figure class="frame reveal">
+        <img src="img/icons-psi.png" width="292" height="192" alt="Colour icons for PsiTerm, PsiHub, PsiCast and PsiView." loading="lazy" decoding="async" class="mid">
+        <figcaption>Colour icons for the Psi programs, in place of four greys.</figcaption>
+      </figure>
+    </div>
+    <div class="grid three">
+      <figure class="frame reveal">
+        <img src="img/icons-calc.png" width="292" height="660" alt="Calc's toolbar: Psion's dithered icons on the left, Coda's cleaned icons and blue latched Desk button on the right." loading="lazy" decoding="async" class="tall">
+        <figcaption>Calc's toolbar, cleaned up.</figcaption>
+      </figure>
+      <figure class="frame reveal">
+        <img src="img/battery-after.png" width="1080" height="400" alt="Battery information with solid bars in the theme's highlight colour." loading="lazy" decoding="async">
+        <figcaption>Solid level bars, not 1990s hatching.</figcaption>
+      </figure>
+      <figure class="frame reveal">
+        <img src="img/banner-coda.png" width="860" height="270" alt="The boot banner: netBook, Coda 2026, with a small coda sign." loading="lazy" decoding="async">
+        <figcaption>A new boot banner, also in About netBook.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CONTROL PANEL -->
+<section class="control light alt" id="control" aria-labelledby="control-title">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow reveal">The Control panel</p>
+        <h2 id="control-title" class="reveal">Every setting.<br>In its place.</h2>
+        <p class="body-lg reveal">Coda's settings live where Psion's do, grouped together and tidy.</p>
+        <ul class="tick-list reveal">
+          <li><strong>Themes</strong> with a preview, and Psion's exact colours</li>
+          <li><strong>Icons</strong>, Psion's or new</li>
+          <li><strong>Text</strong>, the system font and smoothing</li>
+          <li><strong>Toolbar</strong>, battery, memory and brightness</li>
+          <li><strong>Screenshot</strong>, the key that saves the screen</li>
+          <li><strong>Internet time</strong>, the clock and summer time</li>
+          <li><strong>SerialBoost</strong>, the serial port at double speed</li>
+          <li><strong>Programs</strong>, Psion's or Coda's Calc and Sketch</li>
+        </ul>
+      </div>
+      <figure class="frame reveal">
+        <img src="img/control-panel.png" width="1030" height="760" alt="Coda's Control panel with Time and date, Switch on and off, Themes, Internet time, Add and remove, Screen, Sound, Icons, SerialBoost, Printer, International, Text, Ethernet, Password, Applications, Toolbar, Modems, Keyboard, Dialling, Screenshot and Internet." loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- START UP AND MEMORY -->
+<section class="startup dark" id="startup" aria-labelledby="startup-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Start up and memory</p>
+    <h2 id="startup-title" class="reveal">Ready the way<br>you'd set it up.</h2>
+    <div class="grid two">
+      <div>
+        <p class="body-lg reveal">On a fresh start, Coda prepares itself in plain view: PC link and key clicks off, SerialBoost and Internet time on, the date as 15/11/2026, a 24 hour clock and metric units with miles for long distances, as in the UK.</p>
+        <p class="body reveal">Behind the scenes, a small program called PsiStart paints the theme, runs the timers and handles a warm restart that keeps your C: disk. Programs Psion started at boot are closed again once they've made their documents, giving back about 1.4 MB of memory.</p>
+      </div>
+      <div class="stack">
+        <figure class="frame reveal">
+          <img src="img/prepare.png" width="840" height="240" alt="The Preparing Coda window: Turning off key and screen clicks, with a progress bar." loading="lazy" decoding="async">
+        </figure>
+        <figure class="frame reveal">
+          <img src="img/memory-after.png" width="840" height="400" alt="Memory information: total memory 50M, used 4M, free 46M." loading="lazy" decoding="async">
+          <figcaption>Memory in whole megabytes, as a person would say it.</figcaption>
+        </figure>
+        <figure class="frame reveal">
+          <img src="img/screenshot-key.png" width="1280" height="400" alt="Control panel, Screenshot: the screenshot key set to Ctrl+Fn+P." loading="lazy" decoding="async">
+          <figcaption>Ctrl+Fn+P saves the whole screen as a PNG.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SAFETY AND SWITCHING -->
+<section class="psiboot dark deep" id="psiboot" aria-labelledby="boot-title">
+  <div class="wrap narrow center-text">
+    <p class="eyebrow reveal">Safety and switching</p>
+    <h2 id="boot-title" class="reveal">Psion's image stays.<br>One step away.</h2>
+    <p class="body-lg reveal">The netBook has no flash ROM. At every cold start it copies the whole operating system off the card. So Coda is one file on the card, and Psion's own image sits right next to it.</p>
+    <p class="body-lg reveal">PsiBoot switches between the two. Before a switch it backs up your C: disk, keeping three dated copies, each read back and checked before the oldest is removed. Afterwards it offers to put it back. File, Update the card fetches only the parts of a new image that changed.</p>
+  </div>
+  <div class="wrap">
+    <figure class="pair reveal">
+      <div class="frame"><img src="img/banner-before.png" width="560" height="270" alt="Psion's boot banner." loading="lazy" decoding="async"><figcaption>Psion's</figcaption></div>
+      <div class="frame"><img src="img/banner-coda.png" width="860" height="270" alt="Coda's boot banner." loading="lazy" decoding="async"><figcaption>Coda</figcaption></div>
+    </figure>
+  </div>
+</section>
+
+<!-- REMOVED AND REPLACED -->
+<section class="removed light" id="removed" aria-labelledby="removed-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Removed and replaced</p>
+    <h2 id="removed-title" class="reveal">Less of the old.<br>More room for the new.</h2>
+    <div class="split">
+      <div class="reveal">
+        <table class="swap">
+          <caption class="sr-only">Psion's programs and what replaces them in Coda</caption>
+          <thead><tr><th scope="col">Psion's</th><th scope="col">Coda's</th></tr></thead>
+          <tbody>
+            <tr><td>Email</td><td>PsiMail</td></tr>
+            <tr><td>Opera, Web</td><td>PsiWeb</td></tr>
+            <tr><td>Comms</td><td>PsiTerm</td></tr>
+            <tr><td>nFTP</td><td>PsiTerm's SFTP</td></tr>
+            <tr><td>Calc</td><td>PsiCalc, with Calc on Extras</td></tr>
+            <tr><td>Sketch</td><td>PsiSketch, with Sketch on Extras</td></tr>
+          </tbody>
+        </table>
+        <h3 class="h3-sm">Gone</h3>
+        <ul class="plain-list">
+          <li>Opera and Java, about 4.7 MB</li>
+          <li>The Fax editor and viewer, with their engine and printer driver</li>
+          <li>NetStatRF, for a wireless card the netBook never had</li>
+          <li>The example files and "Welcome to netBook"</li>
+        </ul>
+      </div>
+      <figure class="ba reveal">
+        <div class="ba-stage">
+          <img class="ba-before" src="img/documents-before.png" width="552" height="480" alt="Psion's Documents folder full of example files." loading="lazy" decoding="async">
+          <img class="ba-after" src="img/documents-after.png" width="552" height="480" alt="Coda's Documents folder, empty and ready." loading="lazy" decoding="async">
+          <span class="ba-label left">Psion</span><span class="ba-label right">Coda</span>
+          <span class="ba-handle" aria-hidden="true"></span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the Documents folder in Psion and Coda">
+        </div>
+        <figcaption>Your Documents folder, yours from the start.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- EVERYTHING ELSE -->
+<section class="details light alt" id="details" aria-labelledby="details-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Small touches</p>
+    <h2 id="details-title" class="reveal">And everything else.</h2>
+    <ul class="detail-grid reveal">
+      <li><strong>Analogue</strong>Not Analog, in Time and on the System screen.</li>
+      <li><strong>Gradians</strong>Not Gradients, in Calc.</li>
+      <li><strong>12.6V</strong>And Battery too low, for the one battery.</li>
+      <li><strong>Miles</strong>Beside km in Time's status line.</li>
+      <li><strong>Dark grey</strong>Colour names in sentence case.</li>
+      <li><strong>Home tel</strong>Work tel and Unique ID, in Owner and Machine.</li>
+      <li><strong>No recent files</strong>Says so, instead of doing nothing.</li>
+      <li><strong>About netBook</strong>Shows the build's date and number.</li>
+      <li><strong>About boxes</strong>For PsiHub and PsiView, with a real © sign.</li>
+      <li><strong>Add/remove</strong>Long program names shown in full.</li>
+      <li><strong>Modem</strong>Not Dummy, as the dial up service's name.</li>
+      <li><strong>PsiMail and PsiWeb</strong>Named where settings still said Email and Opera.</li>
+      <li><strong>Fax lines</strong>Hidden from the modem settings.</li>
+      <li><strong>Six zoom steps</strong>In Word, with 1250 and 2000 added.</li>
+      <li><strong>Times New Roman</strong>In full on Word's toolband.</li>
+      <li><strong>PsiView's toolbar</strong>The same name box and battery line as every other program.</li>
+      <li><strong>Tick boxes</strong>For settings that are simply on or off.</li>
+      <li><strong>Dialling</strong>With two Ls.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- DIARY -->
+<section class="diary dark" id="diary" aria-labelledby="diary-title">
+  <div class="wrap narrow center-text">
+    <h2 id="diary-title" class="reveal">Every change.<br>Written down.</h2>
+    <p class="body-lg reveal">Coda is built in the open as a diary: what bugged me, what I did, and a screenshot of each change with Psion's original beside it.</p>
+    <p class="cta-row center reveal">
+      <a class="btn" href="https://github.com/danieledge/PsiCoda">Read the diary</a>
+    </p>
+    <ul class="repo-links reveal" aria-label="Related programs on GitHub">
+      <li><a href="https://github.com/danieledge/psiterm">PsiTerm</a></li>
+      <li><a href="https://github.com/danieledge/psimail">PsiMail</a></li>
+      <li><a href="https://github.com/danieledge/psiweb">PsiWeb</a></li>
+      <li><a href="https://github.com/danieledge/psilinux">PsiLinux</a></li>
+      <li><a href="https://github.com/danieledge/psicast">PsiCast</a></li>
+      <li><a href="https://github.com/danieledge/psiboost">PsiBoost</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>Coda for the Psion netBook</strong>, by Dan Edge.</p>
+    <p>Coda is an unofficial project. It is not made, endorsed or supported by Psion, and is not affiliated with Psion or its owners. Psion and netBook are trademarks of their respective owners.</p>
+    <p><a href="https://github.com/danieledge/PsiCoda">The diary on GitHub</a></p>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
