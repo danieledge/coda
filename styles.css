@@ -421,3 +421,7 @@ h1, h2, h3 { text-wrap: balance; }
   .tick-list.two-col, .machine-cols, .footer-cols { grid-template-columns: 1fr; }
   .chapter-links a { font-size: 14px; padding: 7px 12px; }
 }
+
+/* a before/after slider inside a card */
+.card .ba { margin: 0 0 8px; }
+.card .ba-stage img { margin-bottom: 0; box-shadow: none; }
