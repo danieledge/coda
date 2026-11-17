@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 <title>Coda for the Psion netBook</title>
 <meta name="description" content="Coda is Dan Edge's new edition of the Psion netBook's operating system. Themes, a file manager, a launcher, Office files, calendar sync, modern internet, real Linux and hundreds of fixes, finishing what Psion didn't.">
 <meta name="color-scheme" content="light dark">
@@ -13,7 +13,7 @@
 <meta property="og:image" content="https://danieledge.github.io/coda/img/system-coda.png">
 <meta property="og:url" content="https://danieledge.github.io/coda/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=20261117c">
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
@@ -61,18 +61,21 @@
 <section class="new light" id="new" aria-labelledby="new-title">
   <div class="wrap">
     <h2 id="new-title" class="reveal">What's new.</h2>
-    <p class="body-lg narrow-text reveal">A file manager, a clipboard that remembers, a Share button, an Agenda that knows about calendars and time zones, mail and web that ask how you get online and set themselves up, and a toolbar of widgets and clock faces you choose.</p>
+    <p class="body-lg narrow-text reveal">Widgets and clock faces on the toolbar, a file manager, a clipboard that remembers, a Share button, an Agenda that knows about calendars and time zones, and mail and web that ask how you get online and set themselves up.</p>
     <ul class="new-grid reveal">
       <li class="new-tile big">
-        <a href="#files">
-          <img src="img/files-after.png" width="1280" height="960" alt="PsiFiles showing the Example files folder in Details, with a folder tree on the left." loading="lazy" decoding="async">
-          <span class="new-text"><strong>PsiFiles</strong>A real file manager, on Tab and Ctrl+Q.</span>
+        <a href="#toolbar">
+          <span class="new-pics">
+            <img class="px" src="img/toolbar-widgets.png" width="592" height="320" alt="Four toolbars with a stack of widgets: the date, the moon 97% lit, No alarms, C: 47.7 MB and the week, over the digital clock, free space drawn large, the next alarm, and brightness controls where the clock was." loading="lazy" decoding="async">
+            <img class="px" src="img/toolbar-faces.png" width="888" height="320" alt="Six toolbars, each over a different clock face: analogue, digital, this month's calendar, the moon, sunrise and sunset, and the date in large figures." loading="lazy" decoding="async">
+          </span>
+          <span class="new-text"><strong>Toolbar widgets and clock faces</strong>Up to six widgets above the clock, and up to six faces for it, all your choice. Tap one and it does what you picked. Tested in the emulator.</span>
         </a>
       </li>
       <li class="new-tile">
-        <a href="#toolbar">
-          <img src="img/toolbar-faces-tile.png" width="512" height="320" alt="Three toolbars over three clock faces: the analogue clock, this month's calendar and the moon." loading="lazy" decoding="async">
-          <span class="new-text"><strong>Toolbar</strong>Widgets and clock faces you choose.</span>
+        <a href="#files">
+          <img src="img/files-after.png" width="1280" height="960" alt="PsiFiles showing the Example files folder in Details, with a folder tree on the left." loading="lazy" decoding="async">
+          <span class="new-text"><strong>PsiFiles</strong>A real file manager, on Tab and Ctrl+Q.</span>
         </a>
       </li>
       <li class="new-tile">
@@ -100,7 +103,68 @@
         </a>
       </li>
     </ul>
-    <p class="body narrow-text center-text reveal">Also new: <a href="#clips">Clips</a>, more than one thing on the clipboard, online calendars and contacts with <a href="#sync">Sync</a>, <a href="#alarms">alarms</a> that stop by themselves, Psion commands in the Linux terminal (open, run, tasks, the clipboard, scripts), Alt-Tab switching and Free memory in PsiHub, a memory and task manager, a start-up list, Markdown in Word, a PDF viewer and 91 cities' time zones corrected. Updated 17 November 2026. <a class="link-arrow" href="https://github.com/danieledge/PsiCoda/blob/main/posts/2026-11-17-files-clips-sharing-agenda.md">Read the diary entry</a></p>
+
+    <h3 class="h3-lg sub-head reveal" id="everything">Everything in Coda.</h3>
+    <p class="body narrow-text reveal">Every feature on the netBook today, grouped as this page is. Each one links to its part of the page.</p>
+    <div class="all-features reveal">
+      <h4 class="af-group"><a href="#look-and-feel">Look and feel</a></h4>
+      <ul class="af-list">
+        <li><a href="#toolbar">Toolbar widgets</a><em class="af-new">New</em><span>A stack of up to six above the clock, each tap yours. Tested in the emulator.</span></li>
+        <li><a href="#toolbar">Clock faces</a><em class="af-new">New</em><span>Analogue, digital, the month, the moon, sunrise and sunset, the date. Tested in the emulator.</span></li>
+        <li><a href="#toolbar">Battery gauge</a><span>A model of the pack: the charge, the time left, and full when it's full.</span></li>
+        <li><a href="#toolbar">Brightness</a><span>On every toolbar. The panel as you change it is tested in the emulator.</span></li>
+        <li><a href="#look">Themes</a><span>Six, Coda Dark among them, previewed before you choose.</span></li>
+        <li><a href="#wallpapers">Wallpapers</a><span>Five new ones in your theme, in every folder.</span></li>
+        <li><a href="#fonts">Typefaces</a><span>Inter, Noto Sans or DejaVu Sans for the system. Noto Serif and a mono in Word.</span></li>
+        <li><a href="#icons">Icons</a><span>80 pictures cleaned up, and a new set to choose.</span></li>
+        <li><a href="#review">Psion's programs, refreshed</a><span>Record, Time's map and cities, the year planner, Contacts and more.</span></li>
+      </ul>
+      <h4 class="af-group"><a href="#getting-things-done">Getting things done</a></h4>
+      <ul class="af-list">
+        <li><a href="#psihub">PsiHub</a><span>Ctrl+Menu: programs, settings, files, Agenda and commands.</span></li>
+        <li><a href="#psihub">Switching and shortcut keys</a><span>Ctrl+Menu as Alt-Tab. Ctrl+Fn and a letter starts a program.</span></li>
+        <li><a href="#psihub">Open with</a><span>Fn+Shift+Enter picks the program, and remembers.</span></li>
+        <li><a href="#files">PsiFiles</a><em class="af-new">New</em><span>A file manager on Tab and Ctrl+Q, with a Trash and Undo.</span></li>
+        <li><a href="#share">Share</a><em class="af-new">New</em><span>Email, Save as PDF, Copy to card or Infrared.</span></li>
+        <li><a href="#clips">Clips</a><em class="af-new">New</em><span>The last twenty things you copied, and saved texts.</span></li>
+        <li><a href="#office">Office files</a><span>.docx, .doc, .rtf and .odt in Word. .xlsx, .xls, .ods and .csv in Sheet.</span></li>
+        <li><a href="#office">Markdown in Word</a><span>Opened formatted, saved as clean Markdown.</span></li>
+        <li><a href="#office">Sheet's Data menu</a><span>Fill, filter and summarise.</span></li>
+        <li><a href="#office">PDF</a><span>Print to PDF from any program. PsiPDF on the card opens them.</span></li>
+        <li><a href="#agenda">Agenda</a><em class="af-new">New</em><span>Quick add, calendars, entry details and time zones.</span></li>
+        <li><a href="#agenda">Snooze and Up next</a><span>5 minutes to a day. Your next entry in PsiHub.</span></li>
+        <li><a href="#sync">Sync</a><span>Agenda and Contacts with online calendars and address books.</span></li>
+        <li><a href="#alarms">Alarms</a><span>Ring for a set time, missed alarms, a chime with quiet hours.</span></li>
+        <li><a href="#programs">Calc, Sketch and Record</a><span>Made again for the whole screen. Sketch can Fill.</span></li>
+        <li><a href="#programs">PsiView</a><span>PNG, JPEG, GIF and BMP, fitted to the screen.</span></li>
+        <li><a href="#spelling">Spelling</a><span>123,000 more words. British ones.</span></li>
+        <li><a href="#psiamp">PsiAmp</a><span>MP3 and WAV, over everything.</span></li>
+      </ul>
+      <h4 class="af-group"><a href="#connected">Connected</a></h4>
+      <ul class="af-list">
+        <li><a href="#psimail">PsiMail</a><em class="af-new">New</em><span>IMAP and SMTP over TLS, in colour, with your week. The new parts tested in the emulator.</span></li>
+        <li><a href="#psiweb">PsiWeb</a><em class="af-new">New</em><span>A speed dial, Reader and a padlock. The new parts tested in the emulator.</span></li>
+        <li><a href="#internet">PsiTerm</a><span>SSH with SFTP and tmux.</span></li>
+        <li><a href="#internet">Set up once</a><span>Direct, the Atom modem helper or PsiProxy, asked at the first start.</span></li>
+        <li><a href="#internet">Internet time</a><span>The clock set daily, summer time on the right dates.</span></li>
+        <li><a href="#internet">SerialBoost</a><span>The serial port at twice the speed.</span></li>
+        <li><a href="#linux">Linux</a><span>Alpine on the card, with your Psion's disks and the epoc command.</span></li>
+      </ul>
+      <h4 class="af-group"><a href="#under-the-hood">Under the hood</a></h4>
+      <ul class="af-list">
+        <li><a href="#startup">Start-up list</a><span>Your programs and files, opened after every start.</span></li>
+        <li><a href="#startup">Preparing Coda</a><span>UK settings, made in plain view on a fresh start.</span></li>
+        <li><a href="#startup">Saving as you go</a><span>Word and Sheet save every 5 minutes.</span></li>
+        <li><a href="#startup">Screenshot key</a><span>Ctrl+Fn+P saves the screen as a PNG.</span></li>
+        <li><a href="#tasks">Tasks and memory</a><span>PsiMemMan, and Free memory in PsiHub.</span></li>
+        <li><a href="#control">Control panel</a><span>Every Coda setting, in its place.</span></li>
+        <li><a href="#psiboot">PsiBoot</a><span>Psion's image a step away, checked backups, Update the card.</span></li>
+        <li><a href="#review">Time zones</a><span>91 cities corrected, on today's time zones.</span></li>
+        <li><a href="#removed">Example files</a><span>A .docx, an .xlsx, an .odt, a .csv, Markdown and a photo.</span></li>
+        <li><a href="#details">Small touches</a><span>Analogue, Dialling, Gradians and the rest.</span></li>
+      </ul>
+    </div>
+    <p class="body narrow-text center-text sub-head-sm reveal">Updated 17 November 2026. <a class="link-arrow" href="https://github.com/danieledge/PsiCoda/blob/main/posts/2026-11-17-files-clips-sharing-agenda.md">Read the diary entry</a></p>
   </div>
 </section>
 
