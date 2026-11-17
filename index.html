@@ -61,7 +61,7 @@
 <section class="new light" id="new" aria-labelledby="new-title">
   <div class="wrap">
     <h2 id="new-title" class="reveal">What's new.</h2>
-    <p class="body-lg narrow-text reveal">A file manager, a clipboard that remembers, a Share button and an Agenda that knows about calendars, time zones and invitations.</p>
+    <p class="body-lg narrow-text reveal">A file manager, a clipboard that remembers, a Share button, an Agenda that knows about calendars and time zones, and mail and web that ask how you get online and set themselves up.</p>
     <ul class="new-grid reveal">
       <li class="new-tile big">
         <a href="#files">
@@ -88,19 +88,19 @@
         </a>
       </li>
       <li class="new-tile">
-        <a href="#sync">
-          <img src="img/sync-agenda.png" width="1232" height="484" alt="The Sync item in the Control panel, on its Agenda page." loading="lazy" decoding="async">
-          <span class="new-text"><strong>Sync</strong>Online calendars and contacts.</span>
+        <a href="#psiweb">
+          <img src="img/psiweb.png" width="640" height="480" alt="PsiWeb's start page: a search box and a speed dial of eight coloured tiles." loading="lazy" decoding="async">
+          <span class="new-text"><strong>PsiWeb</strong>A speed dial, Reader and a padlock.</span>
         </a>
       </li>
       <li class="new-tile">
-        <a href="#alarms">
-          <img src="img/alarms-ringing.png" width="976" height="504" alt="Time's Preferences, the Ringing page." loading="lazy" decoding="async">
-          <span class="new-text"><strong>Alarms</strong>That stop by themselves.</span>
+        <a href="#psimail">
+          <img src="img/psimail-week.png" width="640" height="480" alt="PsiMail's calendar as a week of hours, events in their calendars' colours." loading="lazy" decoding="async">
+          <span class="new-text"><strong>PsiMail</strong>New mail at once, and your week.</span>
         </a>
       </li>
     </ul>
-    <p class="body narrow-text center-text reveal">Also new: Psion commands in the Linux terminal (open, run, tasks, the clipboard, scripts), Alt-Tab switching and Free memory in PsiHub, a memory and task manager, a start-up list, Markdown in Word, a PDF viewer and 91 cities' time zones corrected. Updated 17 November 2026. <a class="link-arrow" href="https://github.com/danieledge/PsiCoda/blob/main/posts/2026-11-17-files-clips-sharing-agenda.md">Read the diary entry</a></p>
+    <p class="body narrow-text center-text reveal">Also new: online calendars and contacts with <a href="#sync">Sync</a>, <a href="#alarms">alarms</a> that stop by themselves, Psion commands in the Linux terminal (open, run, tasks, the clipboard, scripts), Alt-Tab switching and Free memory in PsiHub, a memory and task manager, a start-up list, Markdown in Word, a PDF viewer and 91 cities' time zones corrected. Updated 17 November 2026. <a class="link-arrow" href="https://github.com/danieledge/PsiCoda/blob/main/posts/2026-11-17-files-clips-sharing-agenda.md">Read the diary entry</a></p>
   </div>
 </section>
 
@@ -506,7 +506,7 @@
       <div>
         <p class="eyebrow reveal">Clips</p>
         <h2 id="clips-title" class="reveal">Copy now.<br>Paste later.</h2>
-        <p class="body-lg reveal">EPOC keeps one thing on the clipboard. Clips keeps the last twenty. Press Ctrl+Fn+V in any program, pick one and press Enter, and it goes in at the cursor.</p>
+        <p class="body-lg reveal">EPOC keeps one thing on the clipboard. Clips keeps the last twenty, or ten, or fifty. Press Ctrl+Fn+V in any program, pick one and press Enter, and it goes in at the cursor.</p>
         <p class="body reveal">Saved texts are for the lines you type again and again. Put %date% or %time% in one and it's filled in when you paste. The idea came from the Psion community's own add-ons, written again for Coda.</p>
       </div>
     </div>
@@ -800,6 +800,8 @@
     <p class="body-lg narrow-text reveal">Mail, the web and SSH that work with today's internet, and a real Linux one word away.</p>
     <ul class="chapter-links reveal" aria-label="In this chapter">
       <li><a href="#internet">Mail, web and terminal</a></li>
+      <li><a href="#psiweb">PsiWeb</a></li>
+      <li><a href="#psimail">PsiMail</a></li>
       <li><a href="#linux">Linux</a></li>
     </ul>
   </div>
@@ -811,23 +813,24 @@
     <p class="eyebrow reveal">Internet and connectivity</p>
     <h2 id="internet-title" class="reveal">Today's internet.<br>On a 1999 machine.</h2>
     <p class="body-lg narrow-text reveal">Psion's Email, Opera and Comms terminal couldn't cope with the modern internet. Coda replaces them with programs that can, and the toolbar's Email and web icons open them.</p>
+    <p class="body narrow-text reveal">All three call the ways a Psion gets online by the same plain names: Direct, on the network card or a dial up; the Atom modem helper; or PsiProxy on a computer. The first time PsiMail or PsiWeb starts, it asks which is yours and sets itself up. Cancel changes nothing.</p>
     <div class="grid three">
       <article class="card dark-card reveal">
-        <img src="img/psimail.png" width="640" height="480" alt="PsiMail on the netBook: folders on the left, the inbox list in colour, and a preview of the chosen message under it with a coloured link and quoted replies." loading="lazy" decoding="async">
+        <img src="img/psimail.png" width="640" height="480" alt="PsiMail on the netBook: manila folders with Today's events under them, the inbox with yellow envelopes for unread mail, a preview of the chosen message with its attachment, and Reply, Reply to all, Forward, Archive and Flag under it." loading="lazy" decoding="async">
         <h3>PsiMail</h3>
-        <p>IMAP and SMTP over TLS, with the server's certificate checked. On the netBook, a preview of each message under the list, in colour.</p>
+        <p>IMAP and SMTP over TLS, with the server's certificate checked, Gmail's included. On the netBook, in colour, with a preview under the list and today's events under the folders.</p>
         <a class="link-arrow" href="https://github.com/danieledge/psimail">PsiMail on GitHub</a>
       </article>
       <article class="card dark-card reveal">
-        <img src="img/psiweb.png" width="640" height="480" alt="PsiWeb's welcome page across the whole screen, listing light sites that work well, with Back, Forward, Reload, Stop and Home on the toolband." loading="lazy" decoding="async">
+        <img src="img/psiweb.png" width="640" height="480" alt="PsiWeb's start page across the whole screen: a search box, a speed dial of eight coloured tiles numbered 1 to 8, and the connection, with the address and Direct on the toolband above." loading="lazy" decoding="async">
         <h3>PsiWeb</h3>
-        <p>A browser built on Links 2, in colour across the whole screen, with Back, Forward, Reload and the address on a toolband.</p>
+        <p>A browser built on Links 2, in colour across the whole screen. It opens on a speed dial, and a light by the address says how the page came.</p>
         <a class="link-arrow" href="https://github.com/danieledge/psiweb">PsiWeb on GitHub</a>
       </article>
       <article class="card dark-card reveal">
         <img src="img/psiterm.png" width="640" height="480" alt="PsiTerm in colour on the netBook: its banner, then an SSH connection dialled through the modem, with the server's key shown for checking." loading="lazy" decoding="async">
         <h3>PsiTerm</h3>
-        <p>SSH with SFTP and tmux support, in place of a dial up terminal and an FTP client that sent passwords in clear.</p>
+        <p>SSH with SFTP and tmux support, in place of a dial up terminal and an FTP client that sent passwords in clear. It names the connection as PsiMail and PsiWeb do.</p>
         <a class="link-arrow" href="https://github.com/danieledge/psiterm">PsiTerm on GitHub</a>
       </article>
     </div>
@@ -843,6 +846,68 @@
         <p>Psion stopped the serial port at 115,200 bps. The chip can do 230,400. Any program that asks for the old top speed gets double. It's the netBook version of <a href="https://github.com/danieledge/psiboost">PsiBoost</a>.</p>
       </article>
     </div>
+  </div>
+</section>
+
+<!-- PSIWEB -->
+<section class="psiweb light" id="psiweb" aria-labelledby="psiweb-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">PsiWeb</p>
+    <h2 id="psiweb-title" class="reveal">The web.<br>The way you want to read it.</h2>
+    <div class="split">
+      <div>
+        <p class="body-lg reveal">Set up PsiWeb asks how this Psion gets online, where pictures come from and how to search. Going direct, PsiWeb checks each secure site's certificate on the Psion itself, RSA and ECDSA alike, and speaks AES-GCM as well, so sites like eBay open without a helper.</p>
+        <p class="body reveal">The light by the address says the route, with a padlock once a secure page has been checked. On a netBook going direct, pictures are on as standard.</p>
+      </div>
+      <figure class="frame reveal">
+        <img src="img/psiweb-setup.png" width="1116" height="418" alt="Set up PsiWeb, with Connection, Web helper and Pages tabs: This Psion goes online by Network card or dial-up, with Test, Cancel and OK." loading="lazy" decoding="async">
+        <figcaption>Asked once, the first time it starts.</figcaption>
+      </figure>
+    </div>
+    <ul class="chips reveal" aria-label="PsiWeb's keys">
+      <li><kbd>1 to 8</kbd> the speed dial</li>
+      <li><kbd>Shift+Ctrl+R</kbd> the next page style</li>
+      <li><kbd>Ctrl+L</kbd> type an address</li>
+    </ul>
+    <div class="grid two">
+      <figure class="frame reveal">
+        <img src="img/psiweb-reader.png" width="1280" height="600" alt="BBC News in Reader: the headline story first, then the page's headings in large type." loading="lazy" decoding="async">
+        <figcaption>Four page styles: Full, Lighter, Reader and Text only. Reader puts the article first.</figcaption>
+      </figure>
+      <figure class="frame reveal">
+        <img src="img/psiweb-not-opened.png" width="680" height="280" alt="Page not opened: PsiWeb could not reach the server, the likely cause, and Try again, Test the connection and Set up PsiWeb." loading="lazy" decoding="async">
+        <figcaption>A page that won't open says why, and what to try.</figcaption>
+      </figure>
+    </div>
+    <h3 class="h3-lg center-text sub-head reveal">Search without a helper.</h3>
+    <p class="body narrow-text center-text reveal">Type words where the address goes and they're searched for, with DuckDuckGo's page without scripts or FrogFind, no helper needed. Addresses complete from your favourites and history. Cookies can be kept for next time. Big sites such as Wikipedia, Reddit and CNN get a line at the top offering their own lighter edition. A page saves as big as the disk will take.</p>
+    <h3 class="h3-lg center-text sub-head reveal">Open in full browser.</h3>
+    <p class="body narrow-text center-text reveal">For a page that needs a modern browser, File, Open in full browser hands it to PsiTerm, which runs Carbonyl (Chrome in a terminal) or w3m on a computer you've saved there. So far it has been tried in the emulator as far as PsiTerm taking the page.</p>
+  </div>
+</section>
+
+<!-- PSIMAIL -->
+<section class="psimail light alt" id="psimail" aria-labelledby="psimail-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">PsiMail</p>
+    <h2 id="psimail-title" class="reveal">Your mail and your week.<br>In colour.</h2>
+    <div class="split">
+      <figure class="frame reveal">
+        <img src="img/psimail-week.png" width="640" height="480" alt="PsiMail's calendar on the netBook: a week of hours from 08:00 to 20:00, each event a block in its calendar's colour, today's column tinted, a red line at the time now, and the Work and Home calendars under the folders." loading="lazy" decoding="async">
+        <figcaption>The week as a grid of hours, events in their calendars' colours.</figcaption>
+      </figure>
+      <div>
+        <p class="body-lg reveal">On the netBook PsiMail uses the whole screen. Manila folders, yellow envelopes for unread mail, red flags. Under the folders, the rest of today's events. Under the preview, its pictures, and Reply, Forward, Archive and Flag for the pen.</p>
+        <p class="body reveal">With the network card or a dial up connection open, new mail appears at once. Through the Atom modem helper it checks every ten minutes. The box in the title band says the route and who does the encryption, with a light. Tap it for Status information.</p>
+      </div>
+    </div>
+    <ul class="chips reveal" aria-label="PsiMail's keys">
+      <li><kbd>Shift+Ctrl+J</kbd> Next unread</li>
+      <li><kbd>Ctrl+Q</kbd> Week, Month or Day list</li>
+    </ul>
+    <h3 class="h3-lg center-text sub-head reveal">Find, rules and signatures.</h3>
+    <p class="body narrow-text center-text reveal">Find works offline, through the mail already on this Psion. Up to eight rules move new mail to a folder, flag it or mark it read as it arrives. Replies can have a signature of their own.</p>
+    <p class="body narrow-text center-text reveal">New in PsiWeb 0.85 to 0.88 and PsiMail 1.00 to 1.03, tested in the emulators so far.</p>
   </div>
 </section>
 
