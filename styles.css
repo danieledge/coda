@@ -434,3 +434,8 @@ h1, h2, h3 { text-wrap: balance; }
 .term-list:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .term-list + .body { margin-top: 28px; }
 @media (max-width: 600px) { .term-list pre { font-size: 12.5px; padding: 16px; } }
+
+/* phones: nothing may widen the page (Safari zooms out to fit a wide box) */
+html, body { overflow-x: clip; }
+.term-list { max-width: min(820px, 100%); min-width: 0; }
+.term-list pre { width: max-content; min-width: 100%; }
