@@ -37,13 +37,12 @@ Either host lets you add one in its settings. Once the final address is known, c
 
 ## How the page is laid out
 
-A hero, a short "What's new" grid, the story, then five chapters, each opened by a dark band with links to its sections:
+A hero, a short "What's new" grid, the story, then four chapters, each opened by a dark band with links to its sections:
 
 1. Look and feel: themes, wallpapers, the toolbar and clock, fonts, icons, the rushed parts (the comparison gallery).
 2. Getting things done: PsiHub, PsiFiles, Share, Clips, Office files and PDF, Agenda, Sync, Alarms, the new programs, spelling, PsiAmp.
 3. Connected: mail, web and terminal; Linux.
-4. Under the hood: start up, the Control panel, PsiBoot, removed and replaced, small touches.
-5. Both machines: what the Series 5mx gets.
+4. Under the hood: start up, tasks and memory, the Control panel, PsiBoot, removed and replaced, small touches.
 
 The navigation links the chapters; `main.js` marks the one in view. On a phone the links scroll sideways under the bar. Add a new feature to the chapter it belongs to, and to "What's new" while it is new (six tiles: keep the count). Every image must be used on the page; no inline `style` attributes (the CSP in `_headers` blocks them).
 

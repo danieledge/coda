@@ -28,7 +28,6 @@
       <li><a href="#getting-things-done">Work</a></li>
       <li><a href="#connected">Connected</a></li>
       <li><a href="#under-the-hood">Under the hood</a></li>
-      <li><a href="#both-machines">Both machines</a></li>
     </ul>
     <a class="nav-cta" href="https://github.com/danieledge/PsiCoda">Read the diary</a>
   </nav>
@@ -101,7 +100,7 @@
         </a>
       </li>
     </ul>
-    <p class="body narrow-text center-text reveal">Also new: Psion commands in the Linux terminal (open, run, tasks, the clipboard, scripts), Alt-Tab switching and Free memory in PsiHub, a start-up list, Markdown in Word, a PDF viewer and 91 cities' time zones corrected. Updated 17 November 2026. <a class="link-arrow" href="https://github.com/danieledge/PsiCoda/blob/main/posts/2026-11-17-files-clips-sharing-agenda.md">Read the diary entry</a></p>
+    <p class="body narrow-text center-text reveal">Also new: Psion commands in the Linux terminal (open, run, tasks, the clipboard, scripts), Alt-Tab switching and Free memory in PsiHub, a memory and task manager, a start-up list, Markdown in Word, a PDF viewer and 91 cities' time zones corrected. Updated 17 November 2026. <a class="link-arrow" href="https://github.com/danieledge/PsiCoda/blob/main/posts/2026-11-17-files-clips-sharing-agenda.md">Read the diary entry</a></p>
   </div>
 </section>
 
@@ -409,13 +408,14 @@
       <li><kbd>invoice 202</kbd> files with both words</li>
       <li><kbd>free</kbd> give back memory</li>
       <li><kbd>last</kbd> why it last restarted</li>
+      <li><kbd>tasks</kbd> every program and its memory</li>
       <li><kbd>term</kbd> Linux shell</li>
       <li><kbd>?</kbd> every command</li>
     </ul>
     <div class="grid two">
       <figure class="frame reveal">
         <img src="img/hub-stepping.png" width="950" height="330" alt="PsiHub with Data, Word and Record listed and Word chosen while Ctrl is held." loading="lazy" decoding="async">
-        <figcaption>Hold Ctrl and press Menu again to step through your programs. Let go to switch.</figcaption>
+        <figcaption>Hold Ctrl and press Menu again to step through your programs. Let go to switch. Type <kbd>tasks</kbd> for the <a href="#tasks">task manager</a>.</figcaption>
       </figure>
       <figure class="frame reveal">
         <img src="img/hub-files.png" width="916" height="426" alt="PsiHub after typing invoice 202, listing six invoice files with their folders." loading="lazy" decoding="async">
@@ -873,6 +873,27 @@
       </div>
     </div>
 
+    <h3 class="h3-lg center-text sub-head reveal">A few commands.</h3>
+    <div class="term-list reveal" role="region" aria-label="Examples of the epoc command" tabindex="0">
+<pre><code>ls /psion/c/Documents           <span class="c"># Psion's disks under /psion</span>
+cd /psion/c/Documents
+epoc open "Garden notes.docx"   <span class="c"># opens it in Word, as a tap would</span>
+epoc run Agenda                 <span class="c"># starts Agenda, or brings it forward</span>
+epoc ps                         <span class="c"># programs and processes, with memory</span>
+epoc close Word                 <span class="c"># asks Word to save and close</span>
+epoc clip get | wc -w           <span class="c"># count the words on the Psion's clipboard</span>
+epoc note "Backup done"         <span class="c"># a message on the Psion's screen</span>
+epoc shot                       <span class="c"># a screenshot, as a PNG</span>
+epoc info                       <span class="c"># machine, Coda's edition, battery, memory</span></code></pre>
+    </div>
+    <p class="body narrow-text center-text reveal">Lists come out tab separated, or as JSON, with exit codes for scripts. This one backs up Documents to the card, in a folder named by the date.</p>
+    <div class="term-list reveal" role="region" aria-label="A backup script using epoc" tabindex="0">
+<pre><code>#!/bin/sh
+to=/psion/d/Backup/$(date +%Y-%m-%d)
+mkdir -p "$to" &amp;&amp; cp -rp /psion/c/Documents/. "$to"
+epoc note "Documents backed up"</code></pre>
+    </div>
+
     <figure class="frame wide terminal reveal">
       <img src="img/linux-shell.png" width="640" height="150" alt="Alpine's bash on the netBook: uname, the release 3.24.2, the root folder with the Psion's disks beside Linux's own folders, and df." loading="lazy" decoding="async">
       <figcaption><code>ls /</code> shows the Psion's disks beside Linux's own folders. X, Links in graphics mode and Doom are optional installs.</figcaption>
@@ -885,9 +906,10 @@
 <section class="chapter" id="under-the-hood" aria-labelledby="ch-hood-title">
   <div class="wrap">
     <h2 id="ch-hood-title" class="reveal">Under the hood.</h2>
-    <p class="body-lg narrow-text reveal">How Coda starts, where its settings live, and why Psion's own image is never more than a step away.</p>
+    <p class="body-lg narrow-text reveal">How Coda starts, what your memory is doing, where its settings live, and why Psion's own image is never more than a step away.</p>
     <ul class="chapter-links reveal" aria-label="In this chapter">
       <li><a href="#startup">Start up</a></li>
+      <li><a href="#tasks">Tasks and memory</a></li>
       <li><a href="#control">Control panel</a></li>
       <li><a href="#psiboot">Safety and switching</a></li>
       <li><a href="#removed">Removed and replaced</a></li>
@@ -923,8 +945,32 @@
   </div>
 </section>
 
+<!-- TASKS AND MEMORY -->
+<section class="memman light alt" id="tasks" aria-labelledby="tasks-title">
+  <div class="wrap">
+    <p class="eyebrow reveal">Tasks and memory</p>
+    <h2 id="tasks-title" class="reveal">See what's running.<br>And what it holds.</h2>
+    <p class="body-lg narrow-text reveal">EPOC's own task list gives each program's name and its document, and nothing more. It can't say how much memory a program holds, or end one that won't close. PsiMemMan, Coda's memory and task manager, lists every program and process with its threads, memory, heap, stacks and priority.</p>
+    <figure class="pair reveal">
+      <div class="frame"><img src="img/memman-tasklist-before.png" width="912" height="440" alt="Psion's Open files / programs list: System, Word, Sheet, Data, Agenda, Time, Calc and Sketch, with Close file, Done and Go to file." loading="lazy" decoding="async"><figcaption>Psion's</figcaption></div>
+      <div class="frame"><img src="img/memman-tasks.png" width="1120" height="792" alt="PsiMemMan's Tasks view: each program and process with its memory, heap, stacks, priority and kind." loading="lazy" decoding="async"><figcaption>Coda</figcaption></div>
+    </figure>
+    <div class="split">
+      <div>
+        <p class="body-lg reveal">Switch to a program, or close it and it saves first. End one that doesn't answer. The system's own processes are never ended. One command closes every program in the background, and Advanced sets a program's priority.</p>
+        <p class="body reveal">The Memory view shows what's free, what programs, the Internal disk and the system take, the biggest programs and the disks, with a graph of the last few minutes. It stays up to date as it changes. Free memory gives back the unused heap of every program at once, and nothing closes. Clean up, Open files and System information, with why the netBook last restarted, are a menu away. Type <kbd>tasks</kbd> in PsiHub to open it.</p>
+        <p class="body reveal">Ideas from EPOC Task Manager by Robin Hood.</p>
+      </div>
+      <figure class="frame reveal">
+        <img src="img/memman-memory.png" width="1124" height="960" alt="PsiMemMan's Memory view: 48,800 KB free of 51,200 KB, the bar and its parts, the Internal disk, a graph of memory in use, and Free memory: Freed 116 KB at 10:14 on the bottom line." loading="lazy" decoding="async">
+        <figcaption>Free memory's result on the bottom line: 116 KB given back.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <!-- CONTROL PANEL -->
-<section class="control light alt" id="control" aria-labelledby="control-title">
+<section class="control light" id="control" aria-labelledby="control-title">
   <div class="wrap">
     <div class="split">
       <div>
@@ -949,7 +995,7 @@
 </section>
 
 <!-- SAFETY AND SWITCHING -->
-<section class="psiboot light" id="psiboot" aria-labelledby="boot-title">
+<section class="psiboot light alt" id="psiboot" aria-labelledby="boot-title">
   <div class="wrap narrow center-text">
     <p class="eyebrow reveal">Safety and switching</p>
     <h2 id="boot-title" class="reveal">Psion's image stays.<br>One step away.</h2>
@@ -965,7 +1011,7 @@
 </section>
 
 <!-- REMOVED AND REPLACED -->
-<section class="removed light alt" id="removed" aria-labelledby="removed-title">
+<section class="removed light" id="removed" aria-labelledby="removed-title">
   <div class="wrap">
     <p class="eyebrow reveal">Removed and replaced</p>
     <h2 id="removed-title" class="reveal">Less of the old.<br>More room for the new.</h2>
@@ -1001,7 +1047,7 @@
 </section>
 
 <!-- EVERYTHING ELSE -->
-<section class="details light" id="details" aria-labelledby="details-title">
+<section class="details light alt" id="details" aria-labelledby="details-title">
   <div class="wrap">
     <p class="eyebrow reveal">Small touches</p>
     <h2 id="details-title" class="reveal">And everything else.</h2>
@@ -1023,57 +1069,6 @@
       <li><strong>Dialling</strong>With two Ls.</li>
       <li><strong>Dialogs</strong>Sized like Psion's own.</li>
     </ul>
-  </div>
-</section>
-
-<!-- ============ BOTH MACHINES ============ -->
-<section class="chapter" id="both-machines" aria-labelledby="ch-machines-title">
-  <div class="wrap">
-    <h2 id="ch-machines-title" class="reveal">Both machines.</h2>
-    <p class="body-lg narrow-text reveal">The netBook gets Coda as a whole new image. The Series 5mx, which shares its system, gets much of it as programs you install.</p>
-  </div>
-</section>
-
-<section class="machines light" id="series-5mx" aria-labelledby="machines-title">
-  <div class="wrap">
-    <h2 id="machines-title" class="visually-h2 reveal">One Coda, two screens.</h2>
-    <div class="grid two">
-      <figure class="frame reveal">
-        <img src="img/files-5mx.png" width="1140" height="480" alt="PsiFiles on the Series 5mx in greys: a tree of C:, D: and Z: and the Trash, and the Documents folder in Details." loading="lazy" decoding="async">
-        <figcaption>PsiFiles on the Series 5mx, laid out for its 640 by 240 screen.</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <img src="img/clips-5mx.png" width="864" height="444" alt="Clips on the Series 5mx, its Recent page in greys." loading="lazy" decoding="async">
-        <figcaption>Clips, the same program, in greys.</figcaption>
-      </figure>
-    </div>
-    <div class="machine-cols reveal">
-      <div class="machine-col">
-        <h3>On both</h3>
-        <ul class="tick-list">
-          <li><strong>PsiHub</strong>, with file search, switching and shortcut keys</li>
-          <li><strong>PsiFiles</strong> and <strong>Clips</strong></li>
-          <li><strong>Sync</strong> and the <strong>PDF viewer</strong></li>
-          <li><strong>Quick add</strong> in Agenda, and Up next</li>
-          <li><strong>The start-up list</strong></li>
-          <li><strong>PsiMail</strong>, <strong>PsiWeb</strong>, <strong>PsiTerm</strong> and <strong>PsiLinux</strong></li>
-          <li><strong>Internet time</strong>, the new fonts and the screenshot key</li>
-          <li><strong>Coda's wallpapers</strong> and saving as you go</li>
-        </ul>
-      </div>
-      <div class="machine-col">
-        <h3>netBook only</h3>
-        <ul class="tick-list">
-          <li><strong>Themes</strong>, the toolbar and the boot pictures</li>
-          <li><strong>Office files</strong>, Markdown and Print to PDF</li>
-          <li><strong>Share</strong> and the Tab and Ctrl+Q keys</li>
-          <li><strong>Calendars, Entry details</strong> and Snooze steps</li>
-          <li><strong>Alarms</strong> that stop by themselves</li>
-          <li><strong>The new Calc, Sketch, Record</strong> and PsiView</li>
-          <li><strong>PsiBoot</strong>, for switching images</li>
-        </ul>
-      </div>
-    </div>
   </div>
 </section>
 
