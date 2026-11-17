@@ -66,6 +66,29 @@
     });
   });
 
+  // The chapter in view, marked in the navigation
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-links a[href^="#"]'));
+  var chapters = navLinks.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+  if ('IntersectionObserver' in window && chapters.every(Boolean)) {
+    var current = null;
+    function mark() {
+      var y = window.scrollY + window.innerHeight * 0.3, idx = -1;
+      chapters.forEach(function (c, i) { if (c.offsetTop <= y) idx = i; });
+      if (idx === current) return;
+      current = idx;
+      navLinks.forEach(function (a, i) {
+        if (i === idx) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+      });
+      if (idx >= 0 && navLinks[idx].scrollIntoView && window.innerWidth <= 980) {
+        var strip = navLinks[idx].closest('.nav-links');
+        if (strip) strip.scrollTo({ left: navLinks[idx].offsetLeft - 16, behavior: reduce ? 'auto' : 'smooth' });
+      }
+    }
+    var watch = new IntersectionObserver(mark, { threshold: [0, 0.25, 0.5, 1] });
+    Array.prototype.forEach.call(document.querySelectorAll('main > section'), function (s) { watch.observe(s); });
+    mark();
+  }
+
   // Comparison gallery
   Array.prototype.forEach.call(document.querySelectorAll('[data-gallery]'), function (g) {
     var tabs = Array.prototype.slice.call(g.querySelectorAll('[role="tab"]'));
