@@ -711,7 +711,15 @@
         <p>The sound drawn as a waveform, so you can see the gaps. Select part of it to play, erase or crop to, skip 5 or 30 seconds at a time, and bring WAV files in and out.</p>
       </article>
       <article class="card reveal">
-        <img src="img/psiview-own.png" width="540" height="400" alt="A photo of two parrots in 256 colours chosen for the photo, smooth and natural." loading="lazy" decoding="async">
+        <figure class="ba">
+          <div class="ba-stage">
+            <img class="ba-before" src="img/psiview-epoc.png" width="540" height="400" alt="A photo of two parrots in EPOC's fixed palette, blotchy and banded." loading="lazy" decoding="async">
+            <img class="ba-after" src="img/psiview-own.png" width="540" height="400" alt="The same parrots in 256 colours chosen for the photo, smooth and natural." loading="lazy" decoding="async">
+            <span class="ba-label left">Fixed palette</span><span class="ba-label right">Its own</span>
+            <span class="ba-handle" aria-hidden="true"></span>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare EPOC's fixed palette and the photo's own palette">
+          </div>
+        </figure>
         <h3>PsiView</h3>
         <p>Tap a PNG, JPEG, GIF or BMP and it opens fitted to the screen, ready to zoom, pan and step through the folder. Each photo gets its own 256 colours.</p>
       </article>
