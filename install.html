@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 <title>Install Coda</title>
-<meta name="description" content="How to put Coda on your Psion netBook: make a Coda card from your own netBook's system image, unzip it onto a CompactFlash card and start up.">
+<meta name="description" content="How to put Coda on your Psion netBook: download the Coda card, unzip it onto a CompactFlash card and start up.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#000000">
 <meta property="og:title" content="Install Coda on your Psion netBook">
-<meta property="og:description" content="Your own system image in, a ready-made Coda card out. Psion's system stays on the card beside it.">
+<meta property="og:description" content="A ready-made Coda card to download and unzip. Psion's own system comes with it, on the card beside Coda.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://danieledge.github.io/coda/img/system-coda.png">
 <meta property="og:url" content="https://danieledge.github.io/coda/install.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css?v=20261118b">
+<link rel="stylesheet" href="styles.css?v=20261118c">
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
@@ -40,14 +40,14 @@
   <div class="wrap">
     <p class="eyebrow reveal">Install Coda</p>
     <h1 id="hero-title" class="reveal">Your netBook.<br>Finished.</h1>
-    <p class="lede reveal">Coda is made from your own netBook's system image, on this site, in your browser. Unzip what you get onto a CompactFlash card and switch on. Psion's own system stays on the card beside it.</p>
+    <p class="lede reveal">Coda comes ready to go. Download it, unzip it onto your netBook's CompactFlash card and switch on. Psion's own system comes with it, on the card beside Coda.</p>
     <p class="cta-row reveal">
       <a class="btn" href="#steps">Start installing</a>
       <a class="link-arrow" href="#before">What you need</a>
     </p>
     <ol class="glance reveal" aria-label="Installing at a glance">
-      <li><strong>Copy</strong><span>OS.IMG off your card</span></li>
-      <li><strong>Make</strong><span>your Coda card here</span></li>
+      <li><strong>Download</strong><span>the Coda card</span></li>
+      <li><strong>Copy</strong><span>OS.IMG as a spare</span></li>
       <li><strong>Unzip</strong><span>it onto the card</span></li>
       <li><strong>Start</strong><span>the netBook</span></li>
     </ol>
@@ -73,7 +73,7 @@
       <div class="card">
         <span class="need-n" aria-hidden="true">3</span>
         <h3>A computer with a card reader</h3>
-        <p>Windows, macOS or Linux, and a recent browser. Nothing to install: the Coda card is made on the page itself.</p>
+        <p>Windows, macOS or Linux, to download Coda and unzip it onto the card. Nothing to install.</p>
       </div>
     </div>
 
@@ -96,46 +96,45 @@
   <div class="wrap">
     <p class="eyebrow reveal">Install</p>
     <h2 id="steps-title" class="reveal">Four steps.</h2>
-    <p class="body-lg narrow-text reveal">About ten minutes, most of it the card copying.</p>
+    <p class="body-lg narrow-text reveal">About ten minutes, most of it the download and the card copying.</p>
 
     <ol class="steps">
-      <li class="step reveal">
+      <li class="step reveal" id="download">
         <div class="step-num" aria-hidden="true">1</div>
         <div class="step-body">
-          <h3 class="h3-lg">Copy your system image.</h3>
-          <p class="body">Switch the netBook off, take out its CompactFlash card and put it in your computer's card reader. In the card's top folder is a file called <code>OS.IMG</code>, about 14 MB. Copy it to your computer.</p>
-          <p class="body">That file is your netBook's system, from Psion. Coda is made from it, so it never has to be downloaded from anywhere, and it never leaves your computer.</p>
+          <h3 class="h3-lg">Download Coda.</h3>
+          <p class="body">Coda comes as one zip: everything that goes on the card, ready to unzip. It is free, from Coda's page on GitHub.</p>
+          <p class="cta-row download-row">
+            <a class="btn" href="https://github.com/danieledge/coda/releases/latest">Download Coda</a>
+            <span class="caption">Coda-card-2026-11-18.zip, 43 MB</span>
+          </p>
         </div>
       </li>
-
-      <li class="step reveal" id="make">
+      <li class="step reveal">
         <div class="step-num" aria-hidden="true">2</div>
         <div class="step-body">
-          <h3 class="h3-lg">Make your Coda card.</h3>
-          <p class="body">Drop <code>OS.IMG</code> onto the Make my Coda card box. The page checks it is a netBook system it knows, adds Coda to it there in your browser, and gives you <code>Coda-card.zip</code>.</p>
-          <div class="dropzone" role="group" aria-label="Make my Coda card">
-            <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 30V8M15 17l9-9 9 9"/><path d="M8 30v8a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2v-8"/></g></svg>
-            <strong>Make my Coda card</strong>
-            <span>Drop OS.IMG here</span>
-          </div>
-          <p class="caption">Nothing is uploaded: the file is read and changed on your own computer.</p>
+          <h3 class="h3-lg">Keep a spare, if you like.</h3>
+          <p class="body">Switch the netBook off, take out its CompactFlash card and put it in your computer's card reader. In the card's top folder is a file called <code>OS.IMG</code>, about 14 MB: your netBook's system. Copy it to your computer as a spare.</p>
+          <p class="body">You don't need it to go back: the zip has Psion's own system in it too.</p>
         </div>
       </li>
-
       <li class="step reveal">
         <div class="step-num" aria-hidden="true">3</div>
         <div class="step-body">
           <h3 class="h3-lg">Unzip it onto the card.</h3>
-          <p class="body">Unzip <code>Coda-card.zip</code> into the card's top folder. Let it replace <code>OS.IMG</code>: your own is in the zip too, untouched, as <code>OS-STOCK.IMG</code>.</p>
+          <p class="body">Unzip <code>Coda-card-2026-11-18.zip</code> into the card's top folder. Let it replace <code>OS.IMG</code>. <code>OS-STOCK.IMG</code> in the zip is Psion's own system, so you can always go back.</p>
           <div class="tree" tabindex="0" aria-label="The card after unzipping">
 <pre><code><span class="t-dir">CompactFlash card</span>
 ├─ OS.IMG          <span class="c">Coda, the most free memory</span>
 ├─ OS-FULL.IMG     <span class="c">Coda full, works without the card</span>
-├─ OS-STOCK.IMG    <span class="c">your own Psion system</span>
+├─ OS-STOCK.IMG    <span class="c">Psion's own system</span>
 ├─ LOADER.MBM      <span class="c">the picture while it starts</span>
 ├─ <span class="t-dir">System\</span>         <span class="c">Coda's programs and files on the card</span>
+├─ <span class="t-dir">Install\</span>        <span class="c">each program's installer</span>
 ├─ <span class="t-dir">Documents\</span>      <span class="c">example files to try</span>
-└─ <span class="t-dir">Linux\</span>          <span class="c">Alpine Linux for PsiLinux</span></code></pre>
+├─ <span class="t-dir">Linux\</span>          <span class="c">Alpine Linux for PsiLinux</span>
+├─ <span class="t-dir">LICENCES\</span>       <span class="c">whose work is in Coda, on what terms</span>
+└─ README.txt      <span class="c">the same, in short</span></code></pre>
           </div>
           <p class="body">Then eject the card properly before you take it out, so every file is finished writing.</p>
         </div>
@@ -197,7 +196,7 @@
   <div class="wrap narrow">
     <p class="eyebrow reveal">Updates</p>
     <h2 id="update-title" class="reveal">Staying up to date.</h2>
-    <p class="body-lg reveal">When a new Coda comes out, make a new card on this page from the same <code>OS-STOCK.IMG</code> and unzip it over the card, replacing what's there. Your documents and settings on the Internal disk are not touched by the card.</p>
+    <p class="body-lg reveal">When a new Coda comes out, download it from the same place and unzip it over the card, replacing what's there. Your documents and settings on the Internal disk are not touched by the card.</p>
     <p class="body reveal">Coda's programs that update themselves, such as PsiMail and PsiWeb, can also be updated from their own Tools menus.</p>
   </div>
 </section>
@@ -209,8 +208,6 @@
     <h2 id="help-title" class="reveal">If something isn't right.</h2>
 
     <dl class="faq reveal">
-      <dt>The page says it doesn't know my OS.IMG.</dt>
-      <dd>Coda is made from the netBook systems it lists. A file it doesn't know, or one that has been changed, is never patched. Check you copied OS.IMG from the netBook's own card, and that the copy finished.</dd>
 
       <dt>The netBook says "No Coda card".</dt>
       <dd>The Coda system is running without its card. Put the card back in. If you use the netBook without a card, switch to Coda full in PsiBoot.</dd>
@@ -222,10 +219,10 @@
       <dd>In PsiBoot, File, Switch image, choose Psion's own. Or on your computer, rename <code>OS.IMG</code> to <code>OS-CODA.IMG</code> and <code>OS-STOCK.IMG</code> to <code>OS.IMG</code>, then restart the netBook.</dd>
 
       <dt>The netBook doesn't start from the card.</dt>
-      <dd>Put the card in your computer and check <code>OS.IMG</code> is in its top folder, then unzip <code>Coda-card.zip</code> onto it again. Eject the card before you take it out.</dd>
+      <dd>Put the card in your computer and check <code>OS.IMG</code> is in its top folder, then unzip <code>Coda-card-2026-11-18.zip</code> onto it again. Eject the card before you take it out.</dd>
 
-      <dt>Something went wrong and I need to tell Dan.</dt>
-      <dd>Turn on Control panel, Diagnostics. It keeps a log of what happened on the card, and Send sends it.</dd>
+      <dt>Something went wrong.</dt>
+      <dd>Turn on Control panel, Diagnostics. It saves a log of what happened in the <code>Coda\Diagnostics</code> folder on the card. Attach that folder to an issue on <a href="https://github.com/danieledge/coda/issues">GitHub</a>.</dd>
     </dl>
   </div>
 </section>
@@ -236,7 +233,7 @@
     <h2 id="close-title" class="reveal">Ready when you are.</h2>
     <p class="body-lg narrow-text center-text reveal">Coda is free, and always will be. It is never sold.</p>
     <p class="cta-row center reveal">
-      <a class="btn" href="#make">Make my Coda card</a>
+      <a class="btn" href="https://github.com/danieledge/coda/releases/latest">Download Coda</a>
       <a class="link-arrow" href="index.html">See what Coda does</a>
     </p>
   </div>
@@ -250,7 +247,7 @@
       <div>
         <p><strong>Coda for the Psion netBook</strong>, by Dan Edge.</p>
         <p><a href="https://github.com/danieledge/PsiCoda">The diary on GitHub</a></p>
-        <p>Coda is an unofficial project. It is not made, endorsed or supported by Psion, and is not affiliated with Psion or its owners. Psion and netBook are trademarks of their respective owners. Coda is made from your own netBook's system image: this site never sends you Psion's software.</p>
+        <p>Coda is an unofficial project. It is not made, endorsed or supported by Psion, and is not affiliated with Psion or its owners. Psion and netBook are trademarks of their respective owners.</p>
       </div>
       <div>
         <h2 class="footer-h">With thanks</h2>

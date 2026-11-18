@@ -504,9 +504,8 @@ body { overflow-wrap: break-word; }
 .step-body { max-width: 760px; }
 .step-body .body:last-child { margin-bottom: 0; }
 
-.dropzone { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; margin: 8px 0 0; padding: 36px 20px; border-radius: var(--radius); border: 2px dashed var(--light-line); background: var(--light-card); color: var(--light-muted); }
-.dropzone svg { width: 44px; height: 44px; color: var(--accent); margin-bottom: 6px; }
-.dropzone strong { font-size: 20px; color: var(--light-fg); }
+.download-row { margin: 22px 0 0; gap: 18px; }
+.download-row .caption { margin: 0; }
 
 .tree { max-width: min(640px, 100%); min-width: 0; margin: 8px 0 22px; background: var(--dark-card); border: 1px solid var(--dark-line); border-radius: 14px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .tree pre { margin: 0; padding: 18px 20px; font-family: var(--mono); font-size: 14px; line-height: 1.75; color: var(--dark-fg); white-space: pre; width: max-content; min-width: 100%; }
