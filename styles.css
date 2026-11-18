@@ -483,3 +483,55 @@ body { overflow-wrap: break-word; }
 .also-new li { display: flex; flex-wrap: wrap; gap: 0 12px; align-items: baseline; }
 .also-new span { display: inline; }
 .new-tile.big .new-pics img.half { width: 46%; align-self: center; }
+
+/* Install guide (install.html) */
+.install-hero { padding-bottom: clamp(72px, 10vw, 120px); }
+.glance { list-style: none; padding: 0; margin: clamp(48px, 7vw, 72px) auto 0; max-width: 860px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; counter-reset: glance; }
+.glance li { counter-increment: glance; background: var(--dark-card); border: 1px solid var(--dark-line); border-radius: 16px; padding: 18px 16px; text-align: left; }
+.glance li::before { content: counter(glance); display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--cream); color: #111; font-size: 14px; font-weight: 700; margin-bottom: 10px; }
+.glance strong { display: block; font-size: 19px; color: var(--dark-fg); }
+.glance span { display: block; font-size: 14px; color: var(--dark-muted); }
+
+.need .card { position: relative; padding-top: 26px; }
+.need-n { font-size: 44px; font-weight: 700; letter-spacing: -0.03em; line-height: 1; color: var(--accent); }
+.note-card.warn { grid-template-columns: 1.2fr 1fr; align-items: start; box-shadow: 0 0 0 1px var(--light-line), inset 4px 0 0 #e8a33a; }
+.note-card.warn .tick-list { margin-top: 0; }
+.note-card.warn .tick-list li { font-size: 16px; }
+
+.steps { list-style: none; padding: 0; margin: 56px 0 0; }
+.step { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: clamp(16px, 3vw, 32px); padding: clamp(32px, 5vw, 48px) 0; border-top: 1px solid var(--light-line); }
+.step-num { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; font-size: 24px; font-weight: 700; color: #fff; background: var(--accent); }
+.step-body { max-width: 760px; }
+.step-body .body:last-child { margin-bottom: 0; }
+
+.dropzone { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; margin: 8px 0 0; padding: 36px 20px; border-radius: var(--radius); border: 2px dashed var(--light-line); background: var(--light-card); color: var(--light-muted); }
+.dropzone svg { width: 44px; height: 44px; color: var(--accent); margin-bottom: 6px; }
+.dropzone strong { font-size: 20px; color: var(--light-fg); }
+
+.tree { max-width: min(640px, 100%); min-width: 0; margin: 8px 0 22px; background: var(--dark-card); border: 1px solid var(--dark-line); border-radius: 14px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.tree pre { margin: 0; padding: 18px 20px; font-family: var(--mono); font-size: 14px; line-height: 1.75; color: var(--dark-fg); white-space: pre; width: max-content; min-width: 100%; }
+.tree code { font-size: inherit; }
+.tree .c { color: var(--dark-muted); }
+.tree .t-dir { color: var(--cream); }
+.tree:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+.small-device { max-width: 720px; margin-top: 56px; }
+.tag { display: block; font-size: 13px; font-weight: 650; letter-spacing: 0.04em; text-transform: uppercase; color: var(--cream); margin-bottom: 6px; }
+#images .card h3 { font-size: 24px; }
+
+.faq { margin: 40px 0 0; }
+.faq dt { font-size: 19px; font-weight: 650; color: var(--light-fg); padding-top: 22px; border-top: 1px solid var(--light-line); }
+.faq dd { margin: 8px 0 22px; color: var(--light-muted); font-size: 17px; }
+
+.close-band { text-align: center; }
+.close-band .narrow-text { margin-left: auto; margin-right: auto; }
+
+@media (max-width: 720px) {
+  .glance { grid-template-columns: 1fr 1fr; }
+  .note-card.warn { grid-template-columns: 1fr; }
+  .step { grid-template-columns: 1fr; gap: 14px; }
+  .step-num { width: 44px; height: 44px; font-size: 20px; }
+  .tree pre { font-size: 12.5px; padding: 14px; }
+}
+.step > *, .glance > *, .need > * { min-width: 0; }
+@media (max-width: 720px) { .step { grid-template-columns: minmax(0, 1fr); } }
