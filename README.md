@@ -44,7 +44,7 @@ A hero, a short "What's new" grid, the story, then four chapters, each opened by
 3. Connected: mail, web and terminal; PsiWeb; PsiMail; Linux.
 4. Under the hood: start up, tasks and memory, the Control panel, PsiBoot, removed and replaced, small touches.
 
-The navigation links the chapters; `main.js` marks the one in view. On a phone the links scroll sideways under the bar. Add a new feature to the chapter it belongs to, and to "What's new" while it is new (six tiles: keep the count). Every image must be used on the page; no inline `style` attributes (the CSP in `_headers` blocks them).
+The navigation links the chapters; `main.js` marks the one in view. On a phone the links scroll sideways under the bar. Add a new feature to the chapter it belongs to, and to "What's new" while it is new: tiles for the two or three biggest features, a line each for the rest, the date, and a link to the latest diary post. Every image must be used on the page; no inline `style` attributes (the CSP in `_headers` blocks them).
 
 ## Copy rules
 

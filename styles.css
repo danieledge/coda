@@ -476,3 +476,10 @@ body { overflow-wrap: break-word; }
   .nav-links { padding-right: 24px; -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); }
 }
 @media (max-width: 720px) { .af-list li { padding: 8px 0; } }
+
+/* What's new: a tile picture shown whole, and the line for each of the rest */
+.new-tile img.fit { object-fit: contain; object-position: center; padding: 12px; box-sizing: border-box; }
+.also-new { margin: 32px 0 0; }
+.also-new li { display: flex; flex-wrap: wrap; gap: 0 12px; align-items: baseline; }
+.also-new span { display: inline; }
+.new-tile.big .new-pics img.half { width: 46%; align-self: center; }
