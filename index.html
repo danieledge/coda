@@ -466,7 +466,7 @@
         <button role="tab" aria-selected="false" data-b="img/planner-before.png" data-a="img/planner-after.png" data-w="660" data-h="440" data-alt-b="Agenda's Year planner with past days hatched in diagonal lines." data-alt-a="The Year planner with past days in plain light grey." data-cap="Agenda's Year planner. Past days in plain grey, not a dense hatch.">Year planner</button>
         <button role="tab" aria-selected="false" data-b="img/toolband-before.png" data-a="img/toolband-after.png" data-w="1140" data-h="100" data-alt-b="Word's toolband at 25 pixels high." data-alt-a="Word's toolband a third taller, at 33 pixels." data-cap="Word and Sheet's toolband, a third taller and easier to hit with the pen. The font name isn't cut short any more.">Toolband</button>
         <button role="tab" aria-selected="false" data-b="img/contacts-before.png" data-a="img/contacts-after.png" data-w="668" data-h="520" data-alt-b="Contacts zoomed in with labels cut short." data-alt-a="Contacts zoomed in with every label shown in full." data-cap="Contacts shows every label in full, at every zoom.">Contacts</button>
-        <button role="tab" aria-selected="false" data-b="img/extras-before.png" data-a="img/extras-after.png" data-w="380" data-h="960" data-alt-b="The Extras bar with names drawn across the icons." data-alt-a="The Extras bar with taller, wider cells, each icon above its name: Sketch, Record, Psion Sketch, Psion Record, Spell and Psion Calc." data-cap="The Extras bar: each icon sits above its name, in cells wide enough for Psion Record.">Extras bar</button>
+        <button role="tab" aria-selected="false" data-b="img/extras-before.png" data-a="img/extras-after.png" data-w="380" data-h="960" data-alt-b="The Extras bar with names drawn across the icons." data-alt-a="The Extras bar with taller, wider cells, each icon above its name: Sketch, Record, Psion Sketch, Psion Record, Spell and Psion Calc (Psion's Calc has since been removed)." data-cap="The Extras bar: each icon sits above its name, in cells wide enough for Psion Record.">Extras bar</button>
         <button role="tab" aria-selected="false" data-b="img/graph-before.png" data-a="img/graph-after.png" data-w="1280" data-h="960" data-alt-b="A new graph in Sheet with light grey bars." data-alt-a="A new graph in Sheet with proper blue bars." data-cap="Sheet's new graphs start in a proper blue.">Sheet graphs</button>
         <button role="tab" aria-selected="false" data-b="img/sketch-before.png" data-a="img/psisketch.png" data-w="1280" data-h="960" data-alt-b="Psion's Sketch with a smaller picture inside a grey frame." data-alt-a="The new Sketch drawing across the whole screen beside the toolbar." data-cap="The new Sketch draws across the whole screen beside the toolbar, with Sketch's own toolbar and tools.">Sketch</button>
         <button role="tab" aria-selected="false" data-b="img/anagrams-before.png" data-a="img/anagrams-after.png" data-w="1140" data-h="560" data-alt-b="Spell's anagrams in a small font." data-alt-a="Spell's anagrams in a larger font, including blog." data-cap="Spell's anagrams. The letters lobg now make blog.">Anagrams</button>
@@ -1178,7 +1178,7 @@ epoc note "Documents backed up"</code></pre>
           <li><strong>Toolbar</strong>, the widgets, what their taps do and the clock's faces</li>
           <li><strong>Internet time</strong> and <strong>Serial speed</strong></li>
           <li><strong>Sync</strong>, online calendars and contacts</li>
-          <li><strong>Programs</strong>, Psion's or Coda's Calc, Sketch and Record, Open with, Show, Share and Files</li>
+          <li><strong>Programs</strong>, Psion's or Coda's Sketch and Record, Open with, Show, Share and Files</li>
           <li><strong>Start-up</strong>, what opens after each start</li>
           <li><strong>Screenshot</strong>, the key that saves the screen</li>
           <li><strong>Diagnostics</strong>, a debug mode that keeps every program's log on the card, and Save: to report a problem, attach the folder to an issue at <a href="https://github.com/danieledge/coda/issues">github.com/danieledge/coda/issues</a></li>
@@ -1197,7 +1197,7 @@ epoc note "Documents backed up"</code></pre>
     <p class="eyebrow reveal">Safety and switching</p>
     <h2 id="boot-title" class="reveal">Psion's image stays.<br>One step away.</h2>
     <p class="body-lg reveal">The netBook has no flash ROM. At every cold start it copies the whole operating system off the card. So Coda is one file on the card, and Psion's own image sits right next to it.</p>
-    <p class="body reveal">There are two Coda images on the card. The small one keeps what you don't use all the time on the card as ordinary files: Calc, Sketch and Record, PsiAmp, PsiHub, Help, the typefaces, Smooth text's styles, the Office converters, the spelling dictionary and thesaurus, Sketch's clip art, the alarm sounds, Word's templates and OPL's demos. They cost no memory until you use them, so the System screen starts with about 19.9 MB free instead of 15.6 MB. Coda full keeps everything inside, for a netBook without its card.</p>
+    <p class="body reveal">There are two Coda images on the card. The small one keeps what you don't use all the time on the card as ordinary files: Calc, Sketch and Record (and Psion's Sketch and Record), PsiAmp, PsiHub, Help, the typefaces, Smooth text's styles, the Office converters, the spelling dictionary and thesaurus, Sketch's clip art, the alarm sounds, Word's templates and OPL's demos. They cost no memory until you use them, so the System screen starts with about 19.9 MB free instead of 15.6 MB. Coda full keeps everything inside, for a netBook without its card.</p>
     <p class="body reveal">PsiBoot's File, Switch image lists the card's images by what they are: Coda, most free memory; Coda full, no card needed; and Psion's own. Before a switch it backs up your C: disk, keeping three dated copies, each read back and checked before the oldest is removed, and afterwards it offers to put it back. A restore keeps the new image's connection settings and copies your dial-up services into them.</p>
   </div>
   <div class="wrap">
@@ -1228,7 +1228,8 @@ epoc note "Documents backed up"</code></pre>
             <tr><td>Comms</td><td>PsiTerm</td></tr>
             <tr><td>nFTP</td><td>PsiTerm's SFTP</td></tr>
             <tr><td>Browse dialog</td><td>PsiFiles</td></tr>
-            <tr><td>Calc, Sketch, Record</td><td>New ones, with Psion's on Extras</td></tr>
+            <tr><td>Calc</td><td>The new one; Psion's removed</td></tr>
+            <tr><td>Sketch, Record</td><td>New ones, with Psion's on Extras</td></tr>
             <tr><td>Word's .doc viewer</td><td>Word opens .doc itself</td></tr>
             <tr><td>Example files</td><td>Coda's own, on the card</td></tr>
           </tbody>
