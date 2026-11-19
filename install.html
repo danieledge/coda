@@ -68,7 +68,7 @@
       <div class="card">
         <span class="need-n" aria-hidden="true">2</span>
         <h3>A CompactFlash card</h3>
-        <p>128 MB or larger. Your netBook's own card will do if it has the room. A spare card is the easy way: your old card stays exactly as it is.</p>
+        <p>256 MB or larger. Coda takes about 87 MB; the rest is room for PsiBoot's backups of the Internal disk, PsiLinux's saved sessions and your own files. A 128 MB card works but fills up. Your netBook's own card will do if it has the room. A spare card is the easy way: your old card stays exactly as it is.</p>
       </div>
       <div class="card">
         <span class="need-n" aria-hidden="true">3</span>
@@ -80,11 +80,11 @@
     <div class="note-card warn reveal">
       <div>
         <h3 class="h3-lg">Back up the Internal disk first.</h3>
-        <p>The first time the netBook starts a different system, its Internal disk (C:) starts afresh. Copy everything you want to keep from the Internal disk to the card, or to your computer, before you begin. Once Coda is running, PsiBoot does this for you before every switch.</p>
+        <p>The first time the netBook starts a different system, its Internal disk (C:) starts afresh. Copy your own files from the Internal disk to the card, or to your computer, before you begin. Once Coda is running, PsiBoot does this for you before every switch.</p>
       </div>
       <ul class="tick-list">
         <li><strong>Documents</strong>: Word, Sheet, Agenda and Contacts files.</li>
-        <li><strong>Mail and settings</strong> of programs you've installed.</li>
+        <li><strong>Data files</strong> of programs you've installed, such as their mail folders.</li>
         <li><strong>Anything in</strong> C:\Documents and your own folders.</li>
       </ul>
     </div>
@@ -133,9 +133,12 @@
 ├─ <span class="t-dir">Documents\</span>      <span class="c">example files to try</span>
 ├─ <span class="t-dir">Linux\</span>          <span class="c">Alpine Linux for PsiLinux</span>
 ├─ <span class="t-dir">LICENCES\</span>       <span class="c">whose work is in Coda, on what terms</span>
+├─ <span class="t-dir">Coda\</span>           <span class="c">Diagnostics' logs, ready-made</span>
+├─ <span class="t-dir">Backup\</span>         <span class="c">PsiBoot's backups of C:, ready-made</span>
 └─ README.txt      <span class="c">the same, in short</span></code></pre>
           </div>
           <p class="body">Then eject the card properly before you take it out, so every file is finished writing.</p>
+          <p class="body"><strong>Don't let your computer repair the card.</strong> The netBook leaves old bytes after the end of a folder it makes, which it ignores but a Mac's Disk Utility, <code>fsck</code> or <code>chkdsk</code> may report as damaged or cross-linked entries. Nothing is wrong, and a repair can delete those folders, your backups with them. Just eject the card.</p>
         </div>
       </li>
 
@@ -143,8 +146,9 @@
         <div class="step-num" aria-hidden="true">4</div>
         <div class="step-body">
           <h3 class="h3-lg">Start the netBook.</h3>
-          <p class="body">Put the card back in and give the netBook a full restart, so it reads the new system from the card. You'll see the Coda picture while it loads, then Preparing Coda, once, as it sets itself up. Then you're at the System screen.</p>
-          <p class="body">Now copy your backup back to the Internal disk.</p>
+          <p class="body">Put the card back in. The netBook reads its system from the card only when it starts from cold: the reset button starts the system already in memory again. So unplug the mains adapter, take the main battery pack out, wait a few seconds, put it back (leave the small backup battery alone) and switch on.</p>
+          <p class="body">You'll see the Coda picture and a progress bar while it loads, then Preparing Coda, once, as it sets itself up. Then you're at the System screen.</p>
+          <p class="body">Now copy your Documents and other files of your own back to the Internal disk. Not a whole old Internal disk, and never its <code>System</code> folder: that would put the old system's settings, connections and Remote link over Coda's. From now on PsiBoot backs up the Internal disk and restores it with Coda's settings kept right.</p>
         </div>
       </li>
     </ol>
@@ -217,11 +221,17 @@
       <dt>I want Psion's system back.</dt>
       <dd>In PsiBoot, File, Switch image, choose Psion's own. Or on your computer, rename <code>OS.IMG</code> to <code>OS-CODA.IMG</code> and <code>OS-STOCK.IMG</code> to <code>OS.IMG</code>, then restart the netBook.</dd>
 
+      <dt>The netBook still starts Psion's system.</dt>
+      <dd>It is running the system already in its memory. Unplug the mains adapter, take the main battery pack out for a few seconds, put it back and switch on: the netBook then reads <code>OS.IMG</code> from the card.</dd>
+
       <dt>The netBook doesn't start from the card.</dt>
       <dd>Put the card in your computer and check <code>OS.IMG</code> is in its top folder, then unzip <code>Coda-card-2026-11-18.zip</code> onto it again. Eject the card before you take it out.</dd>
 
       <dt>Something went wrong.</dt>
-      <dd>Turn on Control panel, Diagnostics. It saves a log of what happened in the <code>Coda\Diagnostics</code> folder on the card. Attach that folder to an issue on <a href="https://github.com/danieledge/coda/issues">GitHub</a>.</dd>
+      <dd>Turn on Control panel, Diagnostics. It saves a log of what happened in the <code>Coda\Diagnostics</code> folder on the card. The logs name the servers and web pages your programs used, but not passwords, keys or messages: look through them, then attach that folder to an issue on <a href="https://github.com/danieledge/coda/issues">GitHub</a>.</dd>
+
+      <dt>My computer says the card has errors.</dt>
+      <dd>Folders the netBook made itself (backups in <code>Backup\</code>, for example) can look damaged to a computer's disk check, because the netBook leaves old bytes after a folder's list. The netBook reads them correctly. Don't run First Aid, <code>fsck</code> or <code>chkdsk</code> repairs on the card: a repair can delete those folders.</dd>
     </dl>
   </div>
 </section>
