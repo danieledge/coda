@@ -79,9 +79,11 @@
       navLinks.forEach(function (a, i) {
         if (i === idx) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
       });
-      if (idx >= 0 && navLinks[idx].scrollIntoView && window.innerWidth <= 980) {
-        var strip = navLinks[idx].closest('.nav-links');
-        if (strip) strip.scrollTo({ left: navLinks[idx].offsetLeft - 16, behavior: reduce ? 'auto' : 'smooth' });
+      if (navLinks[0].scrollIntoView && window.innerWidth <= 980) {
+        // back at the top, the strip starts at its first link again
+        var strip = navLinks[0].closest('.nav-links');
+        var left = idx >= 0 ? navLinks[idx].offsetLeft - 16 : 0;
+        if (strip) strip.scrollTo({ left: Math.max(0, left), behavior: reduce ? 'auto' : 'smooth' });
       }
     }
     var watch = new IntersectionObserver(mark, { threshold: [0, 0.25, 0.5, 1] });
