@@ -51,7 +51,7 @@
     <div class="device reveal">
       <div class="bezel">
         <div class="screen">
-          <img src="img/system-coda.png" width="640" height="480" alt="The netBook's System screen in Coda Beta 1: the navy Documents bar with Welcome, Agenda, Sketch and Jotter, the Shapes wallpaper in blue, lavender and peach, and the toolbar with the battery at 85%, 19 MB free, Offline and the clock." fetchpriority="high">
+          <img src="img/system-coda.png" width="640" height="480" alt="The netBook's System screen in Coda Beta 1: the navy Documents bar with Welcome, Agenda, Sketch and Jotter, the Shapes wallpaper in blue, lavender and peach, and the toolbar with 85% over a battery meter, 18 MB over a meter of the free memory, Offline and the clock." fetchpriority="high">
         </div>
       </div>
       <div class="deck" aria-hidden="true"></div>
@@ -64,65 +64,63 @@
 <section class="new light" id="new" aria-labelledby="new-title">
   <div class="wrap">
     <h2 id="new-title" class="reveal">What's new.</h2>
-    <p class="body-lg narrow-text reveal">Memory gets its own place in the Control panel, and Coda looks after it when it runs low. The toolbar shows whether you're online. Coda's Sketch and Record go inside your documents, and Delete on the System screen goes to the Bin.</p>
+    <p class="body-lg narrow-text reveal">The toolbar's battery, memory and connection fill the room they have. Find on the System screen opens Files' Find, the disk list shows each disk's picture and what's in the Bin, PsiMemMan opens on a plain list of your programs, and starting from the card shows how the backup is going.</p>
     <div class="beta-cta reveal">
       <a class="btn" href="install.html">Install Coda Beta 1</a>
       <p class="beta-row"><span class="beta-tag">Beta 1</span><span>The first beta: expect bugs, and back up first.</span><a href="https://github.com/danieledge/coda/issues">Report issues on GitHub</a></p>
     </div>
     <ul class="new-grid reveal">
       <li class="new-tile big">
-        <a href="#tasks">
+        <a href="#toolbar">
           <span class="new-pics">
-            <img class="px" src="img/memory-panel.png" width="1064" height="414" alt="Control panel, Memory: Free 20.1 MB of 23.0 MB, Programs PsiHub 340 KB and Clips 108 KB, Pictures 1.1 MB, Internal disk 50 KB used and the Bin empty, the switches Ask to trim and Trim when idle on and Close when very low off, with Trim now, Free and Close." loading="lazy" decoding="async">
-            <img class="px half" src="img/memory-states.png" width="460" height="240" alt="The toolbar's free memory line three times: 18.8 MB, 2.4 MB free in black on an amber band, and 1.2 MB in white on red with a warning sign." loading="lazy" decoding="async">
+            <img class="px" src="img/toolbar-faces.png" width="880" height="310" alt="Six toolbars, each with 85% over a battery meter, the free memory over its meter and Offline, over a different face: the digital clock, November's calendar, the moon, London's sunrise and sunset, Saturday 8 November in large figures, and the analogue clock." loading="lazy" decoding="async">
+            <img class="px" src="img/battery-states.png" width="732" height="64" alt="The battery line five times: 85%, 55% with a flash while charging, Full with a plug, 18% with an amber meter and 8% with a red one." loading="lazy" decoding="async">
           </span>
-          <span class="new-text"><strong>Memory, in the Control panel</strong>What's free, the programs holding most, and Trim now, in an item of its own. When memory runs very low, Coda puts the programs behind you to sleep by itself, and Free memory learns what each program gives back when it closes.</span>
+          <span class="new-text"><strong>A toolbar that fills its room</strong>The battery, the free memory and the connection in larger type, with a meter for the charge and one for the memory, and each line's name over it where there's room. The clock faces grow too. Short of room, the block steps down, and nothing is cut.</span>
         </a>
       </li>
       <li class="new-tile">
-        <a href="#online">
-          <img class="fit" src="img/link-states.png" width="616" height="220" alt="The toolbar above the clock four times: the battery and 85% on one line, the free memory, then Offline; Dialling with a half amber dot; Online with a green dot; and Offline again." loading="lazy" decoding="async">
-          <span class="new-text"><strong>Online, at a glance</strong>Online, Dialling&hellip; or Offline above the clock, under the battery and its percentage on one line.</span>
+        <a href="#files-find">
+          <img src="img/files-find.png" width="1280" height="960" alt="Files' Find after typing notes: the tree of the disks, and Garden notes and Notes.md, each with its size, date and folder." loading="lazy" decoding="async">
+          <span class="new-text"><strong>Find, from the System screen</strong>Ctrl+F opens Files' Find in the folder you're in, with * and ?, Look in and a Program filter.</span>
         </a>
       </li>
       <li class="new-tile">
-        <a href="#objects">
-          <img src="img/object-record.png" width="1280" height="960" alt="Coda's Record open as an object in Word: the band 'Record' object in 'Word' with Done, above the sound and Record's five big buttons." loading="lazy" decoding="async">
-          <span class="new-text"><strong>Sketch and Record, in your documents</strong>A drawing or a sound inside Word, Jotter and Agenda.</span>
+        <a href="#tasks">
+          <img src="img/memman-programs.png" width="1280" height="960" alt="PsiMemMan's Programs list: 19 MB free, then Word in use, PsiPDF busy, Agenda, Sheet and the System screen, each with what closing it frees, and Switch to, Close, Memory &amp; tasks and Free memory on the toolbar." loading="lazy" decoding="async">
+          <span class="new-text"><strong>Your programs, one key away</strong>PsiMemMan opens on the programs you have open. Enter switches to one, and Del closes it, saving first.</span>
+        </a>
+      </li>
+      <li class="new-tile">
+        <a href="#psiboot">
+          <img class="fit" src="img/boot-backup.png" width="940" height="320" alt="Backing up C: to the card: Copying 10 of 30 files, the file's name, a bar, and Stop leaves C: and the backups on the card as they were, with Stop." loading="lazy" decoding="async">
+          <span class="new-text"><strong>Starting from the card</strong>A progress dialog all through the backup, with Stop.</span>
+        </a>
+      </li>
+      <li class="new-tile">
+        <a href="#psiweb-ahead">
+          <img class="fit" src="img/psiweb-pages.png" width="1124" height="456" alt="Set up PsiWeb's Pages tab: Page style Text only, the standard without PsiProxy; Pictures Only when asked; Fetch the next page ahead Off." loading="lazy" decoding="async">
+          <span class="new-text"><strong>PsiWeb, a page ahead</strong>Text only to start with when there's no PsiProxy, and the next page fetched while you read.</span>
         </a>
       </li>
       <li class="new-tile">
         <a href="#files-bin">
-          <img src="img/bin-files.png" width="920" height="576" alt="Files on its Bin: the tree with the Bin chosen, and four files with their size, date and the folder each was in." loading="lazy" decoding="async">
-          <span class="new-text"><strong>Delete goes to the Bin</strong>On the System screen too, and Bin is in the disk list.</span>
-        </a>
-      </li>
-      <li class="new-tile">
-        <a href="#timer">
-          <img class="fit" src="img/timer-countdown.png" width="1086" height="618" alt="Timer counting down: 0:13 left of a 0:15 countdown that rings at 01:38:57, with Sound: Silent." loading="lazy" decoding="async">
-          <span class="new-text"><strong>Countdowns to the second</strong>Timer rings the second a countdown ends, or shows it quietly with Silent.</span>
-        </a>
-      </li>
-      <li class="new-tile">
-        <a href="#big-sites">
-          <img class="fit" src="img/psiweb-text-offer.png" width="956" height="258" alt="PsiWeb's Page style question: Without PsiProxy, big sites start with a screen of menus. Text only leaves menus and pictures out. Show pages as Text only? No, Yes." loading="lazy" decoding="async">
-          <span class="new-text"><strong>PsiWeb, lighter on big sites</strong>A redrawn toolbar, Text only offered once when it helps, and Reader on a page of headlines.</span>
+          <img class="fit" src="img/bin-disks.png" width="728" height="260" alt="The System screen's disk list twice, each disk with Files' picture: C Internal, D CODA, E, Z RomDrive, then Bin (empty) with a closed can, and Bin (3) with paper over the can's rim." loading="lazy" decoding="async">
+          <span class="new-text"><strong>The disk list, with pictures</strong>Files' own picture for each disk, and a Bin that says whether it's empty or how much it holds.</span>
         </a>
       </li>
     </ul>
     <ul class="af-list also-new narrow-text reveal" aria-label="Also new">
-      <li><a href="#tasks">PsiMemMan</a><span>Coda's memory and task manager. Tap the program's name at the top of the toolbar.</span></li>
-      <li><a href="#toolbar">Battery</a><span>A small battery and its percentage on one line, a flash while it charges and a plug on mains.</span></li>
-      <li><a href="#toolbar">The date face</a><span>The day in large, clean figures, in Psion's own Arial.</span></li>
-      <li><a href="#psihub">PsiHub</a><span>Type system for the System screen. Files show their disk and folder. Close all programs is Shift+Ctrl+D.</span></li>
-      <li><a href="#icons">Extras bar</a><span>A steady order, grouped by kind, every icon just above its name.</span></li>
-      <li><a href="#programs">Psion's Sketch</a><span>Hidden to start with, since Coda's takes its place. Control panel, Programs brings it back.</span></li>
-      <li><a href="#files">Files</a><span>Sharper icons, drawn at the sizes they were made for.</span></li>
-      <li><a href="#wallpapers">Wallpaper</a><span>In every folder and on every disk from the start.</span></li>
-      <li><a href="#psimail">PsiMail</a><span>Work offline on Shift+Ctrl+O, the set-up question asked once, and redialling through a modem.</span></li>
-      <li><a href="#linux">PsiLinux</a><span>Gives memory back when Coda asks, and sleeps when memory is short.</span></li>
-      <li><a href="#office">PsiPDF</a><span>Shows the page by itself once memory is back, with a Free memory&hellip; button.</span></li>
-      <li><a href="#objects">Record</a><span>Smooth while it plays, and Play with a selection plays just that.</span></li>
+      <li><a href="#psiproxy">PsiProxy</a><span>Opens sites built by scripts, keeps the next articles ready, has a help page of its own, and an installer for Linux and the Mac.</span></li>
+      <li><a href="#big-sites">PsiWeb</a><span>Reader on a front page lists its headlines, and Test in Connection settings says which way the page came.</span></li>
+      <li><a href="#psimail-folders">PsiMail</a><span>Every folder on the server, with Inbox, Drafts, Sent, Spam and Trash first. Its box says Mail on or Mail off.</span></li>
+      <li><a href="#tasks">Close all programs</a><span>Leaves open a program that's busy, connected or online, and says which.</span></li>
+      <li><a href="#psihub">PsiHub</a><span>Type machine, owner, disk, battery or about for the System screen's Information commands.</span></li>
+      <li><a href="#timer">Timer</a><span>A picture on every button.</span></li>
+      <li><a href="#objects">Psion's Record</a><span>Hidden to start with, since Coda's Record goes inside your documents. Old recordings still play.</span></li>
+      <li><a href="#linux">PsiLinux</a><span>epoc run waits until the program is up. Behind other programs, it sleeps when memory is very low.</span></li>
+      <li><a href="#office">PsiPDF</a><span>A steady message while it draws a page.</span></li>
+      <li><a href="#control">Diagnostics</a><span>Save is several times faster, and shows how far it's got.</span></li>
     </ul>
     <p class="body narrow-text sub-head-sm reveal">Updated 22 November 2026. <a class="link-arrow" href="https://github.com/danieledge/PsiCoda/blob/main/STATUS.md">Every change in the diary</a></p>
 
@@ -131,11 +129,11 @@
     <div class="all-features reveal">
       <h4 class="af-group"><a href="#look-and-feel">Look and feel</a></h4>
       <ul class="af-list">
-        <li><a href="#toolbar">Toolbar widgets</a><span>A stack of up to six above the clock, each tap yours.</span></li>
+        <li><a href="#toolbar">Toolbar widgets</a><span>A stack of up to six above the clock, as large as the room allows, each tap yours.</span></li>
         <li><a href="#memory-line">Free memory line</a><em class="af-new">New</em><span>Amber when low, red when very low. A tap opens Free memory.</span></li>
         <li><a href="#online">Connection</a><em class="af-new">New</em><span>Online, Dialling&hellip; or Offline above the clock. A tap hangs up.</span></li>
-        <li><a href="#toolbar">Clock faces</a><span>Analogue, digital, the month, the moon, sunrise and sunset, the date.</span></li>
-        <li><a href="#toolbar">Battery gauge</a><span>A model of the pack, on one line: the charge, charging, full and on mains.</span></li>
+        <li><a href="#toolbar">Clock faces</a><span>Analogue, digital, the month, the moon, sunrise and sunset, the date, each grown to fit.</span></li>
+        <li><a href="#toolbar">Battery gauge</a><span>A model of the pack, with a meter: the charge, charging, full and on mains.</span></li>
         <li><a href="#toolbar">Brightness</a><span>A panel as you change it, and level cells on the toolbar if you want them.</span></li>
         <li><a href="#look">Themes</a><span>Seven, Dark and Psion original among them, previewed before you choose.</span></li>
         <li><a href="#wallpapers">Wallpapers</a><span>Shapes, drawn in your theme, in every folder.</span></li>
@@ -149,7 +147,8 @@
         <li><a href="#psihub">Switching and shortcut keys</a><span>Ctrl+Menu as Alt-Tab. Ctrl+Fn and a letter starts a program.</span></li>
         <li><a href="#psihub">Open with</a><span>Fn+Shift+Enter picks the program, and remembers.</span></li>
         <li><a href="#files">PsiFiles</a><span>A file manager on Tab and Ctrl+Q, with a Bin and Undo.</span></li>
-        <li><a href="#files-bin">The Bin</a><em class="af-new">New</em><span>Delete on the System screen goes to it too, and it's in the disk list.</span></li>
+        <li><a href="#files-find">Find files</a><em class="af-new">New</em><span>Ctrl+F on the System screen opens Files' Find, with * and ?, Look in and Program.</span></li>
+        <li><a href="#files-bin">The Bin</a><em class="af-new">New</em><span>Delete on the System screen goes to it too, and the disk list says what's in it.</span></li>
         <li><a href="#share">Share</a><span>Email, Save as PDF, Copy to card or Infrared.</span></li>
         <li><a href="#clips">Clips</a><span>The last twenty things you copied, and saved texts.</span></li>
         <li><a href="#office">Office files</a><span>.docx, .doc, .rtf and .odt in Word. .xlsx, .xls, .ods and .csv in Sheet.</span></li>
@@ -162,7 +161,7 @@
         <li><a href="#alarms">Alarms</a><em class="af-new">New</em><span>Ring for a set time, missed alarms, a chime, and an alarm screen of Coda's own.</span></li>
         <li><a href="#programs">Calc, Sketch and Record</a><span>Made again for the whole screen. Sketch can Fill, and Redo.</span></li>
         <li><a href="#objects">In your documents</a><em class="af-new">New</em><span>Coda's Sketch and Record inside Word, Jotter and Agenda.</span></li>
-        <li><a href="#timer">Timer</a><em class="af-new">New</em><span>A stopwatch, and countdowns to the second.</span></li>
+        <li><a href="#timer">Timer</a><em class="af-new">New</em><span>A stopwatch, and countdowns to the second, with a picture on every button.</span></li>
         <li><a href="#programs">PsiView</a><span>PNG, JPEG, GIF and BMP, fitted to the screen.</span></li>
         <li><a href="#spelling">Spelling</a><span>123,000 more words. British ones.</span></li>
         <li><a href="#psiamp">PsiAmp</a><span>MP3 and WAV, over everything.</span></li>
@@ -170,8 +169,9 @@
       </ul>
       <h4 class="af-group"><a href="#connected">Connected</a></h4>
       <ul class="af-list">
-        <li><a href="#psimail">PsiMail</a><span>IMAP and SMTP over TLS, in colour, with your week.</span></li>
-        <li><a href="#psiweb">PsiWeb</a><span>A speed dial, Reader and a padlock. Big photos, and memory back behind other programs.</span></li>
+        <li><a href="#psimail">PsiMail</a><span>IMAP and SMTP over TLS, in colour, with your week and every folder.</span></li>
+        <li><a href="#psiweb">PsiWeb</a><span>A speed dial, Reader and a padlock. Text only without a helper, and the next page fetched ahead.</span></li>
+        <li><a href="#psiproxy">PsiProxy</a><em class="af-new">New</em><span>The free web helper on a computer: small pages, sites built by scripts, the next article ready.</span></li>
         <li><a href="#internet">PsiTerm</a><span>SSH with SFTP and tmux.</span></li>
         <li><a href="#internet">Set up once</a><span>Direct, the Atom modem helper or PsiProxy, asked at the first start.</span></li>
         <li><a href="#internet">Internet time</a><span>The clock set daily, summer time on the right dates.</span></li>
@@ -184,10 +184,10 @@
         <li><a href="#startup">Preparing Coda</a><span>UK settings, made in plain view on a fresh start.</span></li>
         <li><a href="#startup">Saving as you go</a><span>Word and Sheet save every 5 minutes.</span></li>
         <li><a href="#startup">Screenshot key</a><span>Ctrl+Fn+P saves the screen as a PNG.</span></li>
-        <li><a href="#tasks">Tasks and memory</a><em class="af-new">New</em><span>Control panel, Memory, the Free memory dialog, PsiMemMan, and programs that give memory back.</span></li>
+        <li><a href="#tasks">Tasks and memory</a><em class="af-new">New</em><span>Control panel, Memory, the Free memory dialog, PsiMemMan's list of programs, and programs that give memory back.</span></li>
         <li><a href="#control">Control panel</a><span>Every Coda setting, in its place.</span></li>
         <li><a href="#control">Diagnostics</a><em class="af-new">New</em><span>A debug mode that keeps every log on the card, and Save.</span></li>
-        <li><a href="#psiboot">PsiBoot</a><em class="af-new">New</em><span>Coda or Psion's own, and checked backups. Coda full, no card needed, is coming soon.</span></li>
+        <li><a href="#psiboot">PsiBoot</a><em class="af-new">New</em><span>Coda or Psion's own, and checked backups with a progress bar. Coda full, no card needed, is coming soon.</span></li>
         <li><a href="#review">Time zones</a><span>91 cities corrected, on today's time zones.</span></li>
         <li><a href="#removed">Example files</a><span>On the card: a .docx, an .xlsx, an .odt, a .csv, Markdown, a photo and two PDFs.</span></li>
         <li><a href="#details">Small touches</a><span>Analogue, Dialling, Gradians and the rest.</span></li>
@@ -329,19 +329,20 @@
   <div class="wrap">
     <p class="eyebrow reveal">The toolbar</p>
     <h2 id="toolbar-title" class="reveal">Everything you glance at.<br>Finally there.</h2>
-    <p class="body-lg narrow-text reveal">The battery, free memory and whether you're online, on every program's toolbar, or the widgets you choose in their place.</p>
+    <p class="body-lg narrow-text reveal">The battery, free memory and whether you're online, on every program's toolbar, as large as the room allows, or the widgets you choose in their place.</p>
     <figure class="frame center reveal">
-      <img src="img/toolbar-block.png" width="444" height="288" alt="The bottom of the toolbar: Psion's with just a battery and clock, then Coda's and Dark's, each with a small battery and 85% on one line, the free memory and Offline above the clock." loading="lazy" decoding="async" class="xl">
-      <figcaption>Psion's, then Coda and Dark.</figcaption>
+      <img src="img/toolbar-block.png" width="584" height="510" alt="The bottom of four toolbars. The System screen's: 85% over a battery meter, 18 MB over a memory meter with free beside it, and Offline, in large type. Files' and PsiTerm's, with more room: Battery, Memory and Internet named over each line. PsiMail's: its box saying Mail off, then the same block. Each over the digital clock." loading="lazy" decoding="async" class="mid">
+      <figcaption>On the System screen, in Files, in PsiTerm and in PsiMail.</figcaption>
     </figure>
+    <p class="body narrow-text center-text reveal">The block takes the room each toolbar leaves above the clock. With room to spare, the charge and the free memory get a meter each, and the lines are set in Psion's own Arial. With more, each line has its name over it. The clock faces grow with it. On a toolbar short of room, or with a longer stack, it steps back to the compact stack, and nothing is cut. PsiMail's box says Mail on or Mail off, for its own link to the server, beside the toolbar's Internet line.</p>
 
     <div class="split">
       <div>
         <h3 class="h3-lg reveal">A battery gauge you can trust.</h3>
-        <p class="body reveal">The charge comes from a model of the netBook's pack, not a raw voltage, so it doesn't jump when the backlight comes on and it says when the pack is full. It takes one line: a small battery beside its figure, green, then amber at 20% and red at 10%. On mains it shows a flash while it charges, then a plug and Full. Type "battery" in PsiHub for the time left and the backup battery, or tap the battery line for its history: the last day and the last week.</p>
+        <p class="body reveal">The charge comes from a model of the netBook's pack, not a raw voltage, so it doesn't jump when the backlight comes on and it says when the pack is full. The figure sits over a meter shaped like the battery, green, then amber at 20% and red at 10%; where room is short, it's a small battery beside the figure. On mains a flash shows before the figure while it charges, then a plug and Full. Type "battery" in PsiHub for the time left and the backup battery, or tap the battery line for its history: the last day and the last week.</p>
       </div>
       <figure class="frame reveal">
-        <img src="img/battery-states.png" width="772" height="220" alt="The toolbar's battery line five times: 85% on battery, 55% with a flash while charging, Full with a plug, 20% in amber and 9% in red." loading="lazy" decoding="async">
+        <img src="img/battery-states.png" width="732" height="64" alt="The toolbar's battery line five times: 85% over a green meter, 55% with a flash while charging, Full with a plug, 18% with an amber meter and 8% with a red one." loading="lazy" decoding="async">
         <figcaption>On battery, charging, full on mains, then low and very low.</figcaption>
       </figure>
     </div>
@@ -356,28 +357,28 @@
         </figure>
       </div>
       <figure class="frame reveal">
-        <img src="img/link-states.png" width="616" height="220" alt="The toolbar above the clock four times: Offline, Dialling with a half amber dot, Online with a green dot, and Offline again." loading="lazy" decoding="async">
-        <figcaption>Offline, dialling, online, and offline again after hanging up.</figcaption>
+        <img src="img/link-states.png" width="436" height="40" alt="The toolbar's connection line three times: Offline with an empty dot, Dialling with a half amber dot, and Online with a green dot." loading="lazy" decoding="async">
+        <figcaption>Offline, dialling and online.</figcaption>
       </figure>
     </div>
 
     <div class="split">
       <figure class="frame reveal">
-        <img src="img/toolbar-widgets.png" width="296" height="320" alt="Two toolbars over the digital clock: the standard stack, 85%, 18.8 MB and the brightness controls; and a stack of five widgets, Sat 21 Nov, the moon 88% lit, No alarms, C: 19.7 MB and Week 47." loading="lazy" decoding="async">
-        <figcaption>A stack with the brightness controls, then the date, the moon, the next alarm, C: and the week.</figcaption>
+        <img src="img/toolbar-widgets.png" width="288" height="310" alt="Two toolbars over the digital clock: five widgets, 85% over the battery meter, 18 MB free over the memory meter, Offline, Sat 8 Nov and No alarms; and six in the compact stack, a small battery and 85%, 18 MB free, Offline, Sat 8 Nov, Week 45 and No alarms." loading="lazy" decoding="async">
+        <figcaption>Five widgets with their meters, then six, in the compact stack.</figcaption>
       </figure>
       <div>
         <h3 class="h3-lg reveal">Widgets you choose.</h3>
-        <p class="body reveal">Above the clock goes a stack of up to six widgets, top first: the battery's charge or time left, free memory, the connection, free space on C: or D:, the date, the week number, the moon's phase, the next alarm, and brightness or contrast controls. Every program's toolbar shows the same stack, and a change shows on every open toolbar at once.</p>
+        <p class="body reveal">Above the clock goes a stack of up to six widgets, top first: the battery's charge or time left, free memory, the connection, free space on C: or D:, the date, the week number, the moon's phase, the next alarm, and brightness or contrast controls. Every program's toolbar shows the same stack, and a change shows on every open toolbar at once. The more widgets you choose, the smaller each is drawn, so they all fit.</p>
         <p class="body reveal">What a tap does is yours to choose too: nothing, the widget's own action, or a program you pick. Tap the date and Agenda opens. Tap the next alarm and Time does.</p>
       </div>
     </div>
 
     <h3 class="h3-lg center-text sub-head reveal">A clock with six faces.</h3>
-    <p class="body narrow-text center-text reveal">The toolbar's clock can have up to six faces, in the order you choose: analogue, digital, this month's calendar, the moon, sunrise and sunset, the date in large figures, or a widget drawn large. Tap the clock for the next face, and every program shows the same one. Choose no faces and the clock is off, and the widgets have its room.</p>
+    <p class="body narrow-text center-text reveal">The toolbar's clock can have up to six faces, in the order you choose: analogue, digital, this month's calendar, the moon, sunrise and sunset, the date in large figures, or a widget drawn large. Tap the clock for the next face, and every program shows the same one. Each face grows with the room: the moon to the face's full width, the date to its largest figures, and the calendar sits in the middle. Choose no faces and the clock is off, and the widgets have its room.</p>
     <figure class="frame wide md reveal">
-      <img src="img/toolbar-faces.png" width="888" height="320" alt="Six toolbars, each with 85%, about 19 MB and the brightness controls, over a different face: the analogue clock; 14:51 Sat 21; November's calendar with today boxed and the weekend on a band; the moon, Full in 3 d; London's sunrise and sunset with the sun on its arc; and Saturday 21 November in large figures." loading="lazy" decoding="async">
-      <figcaption>Analogue, digital, this month, the moon, sunrise and sunset, and the date.</figcaption>
+      <img src="img/toolbar-faces.png" width="880" height="310" alt="Six toolbars, each with 85% over a battery meter, 18 or 19 MB over a memory meter and Offline, over a different face: 09:08 Sat 8; November's calendar with today boxed and the weekend in white; the moon, New in 12 d; London's sunrise and sunset with the sun on its arc; Saturday 8 November in large figures; and the analogue clock." loading="lazy" decoding="async">
+      <figcaption>Digital, this month, the moon, sunrise and sunset, the date, and analogue.</figcaption>
     </figure>
     <figure class="frame center reveal">
       <img src="img/date-face.png" width="620" height="130" alt="The date face four times: Saturday 8 November, Wednesday 10 September, Saturday 8 November in Classic, and in Dark, each day number in large Arial." loading="lazy" decoding="async">
@@ -427,10 +428,10 @@
     <div class="split" id="memory-line">
       <div>
         <h3 class="h3-lg reveal">Free memory, at a glance.</h3>
-        <p class="body reveal">The free memory line changes as memory runs down: "18 MB free" when there's plenty, an amber band under 3 MB, and white on red with a warning sign under 1.5 MB. Each one reads in greys too. Tap it, at any level, for the Free memory dialog. It lists what you can do, biggest first: close a program, which saves first, put a program to sleep, empty the internal disk's Bin, or move the biggest files in Documents to the card. Press Free and it says how much came back.</p>
+        <p class="body reveal">The free memory line puts the figure over a meter of how much is free, and changes as memory runs down: an amber band under 3 MB, and white on red with a warning sign under 1.5 MB. Each one reads in greys too. Tap it, at any level, for the Free memory dialog. It lists what you can do, biggest first: close a program, which saves first, put a program to sleep, empty the internal disk's Bin, or move the biggest files in Documents to the card. Press Free and it says how much came back.</p>
         <p class="body reveal">Coda doesn't wait to be asked. Under 3 MB it asks the programs behind you to give back what they can spare, and under 1.5 MB it puts them to sleep, once a minute until there's room. Under 750 KB the dialog comes up by itself, once. Untick "Tell me when memory is low" and it doesn't. Free memory learns what each program gives back when it closes, so its figures are closer every time.</p>
         <figure class="frame reveal">
-          <img src="img/memory-states.png" width="460" height="240" alt="The free memory line three times: 18.8 MB, 2.4 MB free in black on an amber band, and 1.2 MB in white on red with a warning sign." loading="lazy" decoding="async">
+          <img src="img/memory-states.png" width="436" height="68" alt="The free memory line three times: 19 MB over a meter, 2.4 MB in black on an amber band, and 1.2 MB in white on red with a warning sign before the meter." loading="lazy" decoding="async">
         </figure>
       </div>
       <figure class="frame reveal">
@@ -484,8 +485,8 @@
         <figcaption>Sketch, redrawn on the pixel grid with no dithering.</figcaption>
       </figure>
       <figure class="frame reveal">
-        <img src="img/extras-order.png" width="540" height="690" alt="The top of the Extras bar: PsiTerm, PsiLinux, PsiAmp; PsiView, PsiPDF, Files; Clips, Timer, PsiHub; PsiBoot, Sketch, Record; Psion Record, Spell, Program." loading="lazy" decoding="async" class="tall">
-        <figcaption>The Extras bar in a steady order: the internet, pictures and files, tools, then Coda's programs and Psion's. Every icon whole, just above its name.</figcaption>
+        <img src="img/extras-order.png" width="540" height="554" alt="The top of the Extras bar: PsiTerm, PsiLinux, PsiAmp; PsiView, PsiPDF, Files; Clips, Timer, PsiHub; PsiBoot, Sketch, Record." loading="lazy" decoding="async" class="tall">
+        <figcaption>The Extras bar in a steady order: the internet, pictures and files, tools, then Coda's programs, with Psion's after them. Every icon whole, just above its name.</figcaption>
       </figure>
     </div>
     <div class="grid two">
@@ -578,6 +579,7 @@
       <li><kbd>memory</kbd> Control panel, Memory</li>
       <li><kbd>system</kbd> the System screen</li>
       <li><kbd>help</kbd> the netBook's guide</li>
+      <li><kbd>machine</kbd> Machine information</li>
       <li><kbd>last</kbd> why it last restarted</li>
       <li><kbd>tasks</kbd> every program and its memory</li>
       <li><kbd>term</kbd> Linux shell</li>
@@ -601,7 +603,7 @@
         <figcaption>Type <kbd>help</kbd>, <kbd>guide</kbd> or <kbd>manual</kbd> for Psion's Help, opened in Data.</figcaption>
       </figure>
     </div>
-    <p class="body narrow-text center-text reveal">Type <kbd>system</kbd> and the System screen comes first, then the Control panel. Each file shows its disk and folder, and a long name ends in "&hellip;". Agenda's entries are found by the words in them. With PsiHub open, Shift+Ctrl+D closes every program, each saving its files first.</p>
+    <p class="body narrow-text center-text reveal">Type <kbd>system</kbd> and the System screen comes first, then the Control panel. Each file shows its disk and folder, and a long name ends in "&hellip;". Agenda's entries are found by the words in them. Type <kbd>machine</kbd>, <kbd>owner</kbd>, <kbd>disk</kbd>, <kbd>battery</kbd> or <kbd>about</kbd> for the System screen's Information commands. With PsiHub open, Shift+Ctrl+D closes every program, each saving its files first. A program that's busy, connected or online stays open, and the question says which.</p>
     <figure class="frame wide md reveal">
       <img src="img/hub-system.png" width="922" height="426" alt="PsiHub after typing system: System screen and Control panel as commands, then a folder on the card and two System.log files, one in D:\Documents and one in D:\...\Diagnostics." loading="lazy" decoding="async">
     </figure>
@@ -649,19 +651,35 @@
         <img src="img/files-pictures.png" width="1280" height="960" alt="PsiFiles in the Pictures view: icons for each document and a thumbnail of the parrots photo." loading="lazy" decoding="async">
       </figure>
     </div>
-    <div class="feature" id="files-bin">
+    <div class="feature" id="files-find">
+      <div class="feature-text">
+        <h3 class="h3-lg reveal">Find, from the System screen.</h3>
+        <p class="body reveal">Find file on the System screen, from Ctrl+F, the toolbar's button or Edit, Find files, opens Files' Find in the folder you're in. Type any part of a name, or use * and ? as Psion's Find did: <kbd>*.md</kbd> finds every Markdown file. Enter opens what it finds, and Ctrl+G shows it in its folder.</p>
+        <p class="body reveal">View, Filter (Shift+Ctrl+L) chooses where to look, every disk, the disk you started from or the folder and the folders in it, and which program's files. With nothing typed, it lists every file of that program. Psion's own Find files is still on Find again (Shift+Ctrl+F).</p>
+      </div>
+      <div class="stack">
+        <figure class="frame reveal">
+          <img src="img/files-find.png" width="1280" height="960" alt="Files' Find after typing notes: the tree of the disks on the left, Garden notes and Notes.md with their size, date and folder, and 2 found, Enter opens, Ctrl+G its folder at the foot." loading="lazy" decoding="async">
+        </figure>
+        <figure class="frame reveal">
+          <img src="img/files-find-filter.png" width="1080" height="248" alt="Filter found files: Look in All disks, Program Word, With nothing typed in Find, every file of the program, with Cancel and OK." loading="lazy" decoding="async">
+          <figcaption>Every Word file, on every disk.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="feature reverse" id="files-bin">
       <div class="feature-text">
         <h3 class="h3-lg reveal">Delete, to the Bin.</h3>
         <p class="body reveal">Delete on the System screen asks Psion's own question, then puts the file in Files' Bin rather than out of reach. In Files, Undo brings back the last one and Restore any of them. The internal disk's Bin keeps 256 KB for a week; anything bigger asks first.</p>
-        <p class="body reveal">Bin is at the end of the disk list at the foot of the Documents bar, and in Disk, Current disk. Choose it and Files opens on the Bin.</p>
+        <p class="body reveal">The disk list at the foot of the Documents bar shows each disk with Files' own picture: the internal disk, the card and the ROM. Bin ends the list, its can showing paper when something's in it, and says "Bin (empty)" or how many things it holds. Disk, Current disk says "Bin (empty)" too. Choose it and Files opens on the Bin.</p>
       </div>
       <div class="stack">
         <figure class="frame reveal">
           <img src="img/bin-delete.png" width="988" height="182" alt="Delete file Alpha.txt?, It goes to the Bin: Undo or Restore in Files brings it back, with No and Yes." loading="lazy" decoding="async">
         </figure>
         <figure class="frame reveal">
-          <img src="img/bin-disks.png" width="248" height="254" alt="The disk list from the foot of the Documents bar: C Internal, D CODA, E, Z RomDrive, and Bin." loading="lazy" decoding="async">
-          <figcaption>Bin, at the end of the disk list.</figcaption>
+          <img src="img/bin-disks.png" width="728" height="260" alt="The disk list from the foot of the Documents bar twice, each disk with Files' picture: C Internal, D CODA, E, Z RomDrive, then Bin (empty) with a closed can, and Bin (3) with paper over the can's rim." loading="lazy" decoding="async">
+          <figcaption>The Bin empty, then with three things in it.</figcaption>
         </figure>
       </div>
     </div>
@@ -763,7 +781,7 @@
     </div>
 
     <h3 class="h3-lg center-text sub-head reveal">PDF, in and out.</h3>
-    <p class="body narrow-text center-text reveal">"PDF file" is in every program's printer list, and the PDF is saved next to your file, with real text you can search. On the card, PsiPDF opens a PDF tapped on the System screen, fitted to the width. It zooms, goes to a page, finds text and opens files with a password. Short of memory, it says so with a Free memory&hellip; button, and shows the page by itself once the memory is back.</p>
+    <p class="body narrow-text center-text reveal">"PDF file" is in every program's printer list, and the PDF is saved next to your file, with real text you can search. On the card, PsiPDF opens a PDF tapped on the System screen, fitted to the width. It zooms, goes to a page, finds text and opens files with a password. While it draws a page it says so, steadily, bottom left. Short of memory, it says so with a Free memory&hellip; button, and shows the page by itself once the memory is back.</p>
     <div class="grid two">
       <figure class="frame reveal">
         <img src="img/pdf-word-and-pdf.png" width="1968" height="964" alt="A Word file on the netBook beside its printed PDF page: the same heading, coloured line, fonts, paragraph and inserted sketch." loading="lazy" decoding="async">
@@ -927,16 +945,16 @@
 
     <div class="note-card reveal">
       <img src="img/programs-show.png" width="1108" height="644" alt="Control panel, Programs, on its Show page beside Standard, Open with, Share and Files: a list of programs with tick boxes and Show all." loading="lazy" decoding="async">
-      <p>Prefer Psion's originals? Control panel, Programs puts them back on the icons. Its Show page leaves any program you don't use off the Extras bar and PsiHub. Psion's Sketch starts hidden, since Coda's takes its place.</p>
+      <p>Prefer Psion's originals? Control panel, Programs puts them back on the icons. Its Show page leaves any program you don't use off the Extras bar and PsiHub. Psion's Sketch and Record start hidden, since Coda's take their place.</p>
     </div>
 
     <div class="feature" id="objects">
       <div class="feature-text">
         <h3 class="h3-lg reveal">Inside your documents.</h3>
-        <p class="body reveal">Insert, Object in Word lists Coda's Sketch and Record beside Psion's. Insert sketch in Word, Jotter and Agenda opens Coda's Sketch, or the one you choose in Control panel, Programs. The band at the top names the program and the document, as Psion's own programs do, and Done puts it in the page. A sound is kept in the same format as Psion's Record keeps it.</p>
+        <p class="body reveal">Insert, Object in Word lists Coda's Sketch and Record. Psion's two start hidden: a sound recorded with Psion's Record still opens and plays, and Control panel, Programs, Show brings them back. Insert sketch in Word, Jotter and Agenda opens Coda's Sketch, or the one you choose in Control panel, Programs. The band at the top names the program and the document, as Psion's own programs do, and Done puts it in the page. A sound is kept in the same format as Psion's Record keeps it.</p>
         <p class="body reveal">Record plays smoothly, with the position moving as it goes. Select part of the sound and Play plays just that.</p>
         <figure class="frame reveal">
-          <img src="img/object-list.png" width="622" height="342" alt="Word's Insert object: From program, with Word, Sheet, Psion Sketch, Psion Record, Sketch and Record." loading="lazy" decoding="async">
+          <img src="img/object-list.png" width="540" height="280" alt="Word's Insert object: From program, with Word, Sheet, Sketch and Record." loading="lazy" decoding="async">
         </figure>
       </div>
       <figure class="frame reveal">
@@ -948,10 +966,10 @@
     <div class="feature reverse" id="timer">
       <div class="feature-text">
         <h3 class="h3-lg reveal">Timer.</h3>
-        <p class="body reveal">A stopwatch and a countdown, on the Extras bar. A countdown rings the second it ends, on Psion's alarm screen and with your alarm settings. Choose Silent and it shows without a sound.</p>
+        <p class="body reveal">A stopwatch and a countdown, on the Extras bar, with a picture on every button. A countdown rings the second it ends, on Psion's alarm screen and with your alarm settings. Choose Silent and it shows without a sound.</p>
       </div>
       <figure class="frame reveal">
-        <img src="img/timer-countdown.png" width="1086" height="618" alt="Timer counting down: 0:13 left of a 0:15 countdown that rings at 01:38:57, with Sound: Silent." loading="lazy" decoding="async">
+        <img src="img/timer-countdown.png" width="1280" height="960" alt="Timer's Countdown set to 5:00 and Ready: Space starts it, Ctrl+N sets a new time, Sound: Rings. The toolbar's Stopwatch, Countdown, Start Stop and Set each have a picture, over Battery 85%, Memory 19 MB free, Internet Offline and the clock." loading="lazy" decoding="async">
       </figure>
     </div>
 
@@ -1122,10 +1140,21 @@
       <figcaption>The toolbar, redrawn: Back, Forward, Reload and Start, the address, then the padlock and Pictures.</figcaption>
     </figure>
     <h3 class="h3-lg center-text sub-head reveal" id="big-sites">Big sites, made lighter.</h3>
-    <p class="body narrow-text center-text reveal">Without PsiProxy, a big site starts with a screen of menus. So the first time a big page comes in directly or through the Atom modem helper, PsiWeb asks, once, whether to show pages as Text only. Text only now leaves out the words sites hide for screen readers. Lighter puts a site's menus and footer on a line each. Reader shows a page of headlines as Text only does. If the web helper doesn't answer, PsiWeb says so and offers to open the page directly this time.</p>
-    <figure class="frame center reveal">
-      <img class="mid" src="img/psiweb-text-offer.png" width="956" height="258" alt="PsiWeb's Page style question: Without PsiProxy, big sites start with a screen of menus. Text only leaves menus and pictures out, View, Page style changes it. Show pages as Text only? No, Yes." loading="lazy" decoding="async">
-    </figure>
+    <p class="body narrow-text center-text reveal">Without PsiProxy, a big site starts with a screen of menus. So with no helper, or through the Atom modem helper, pages start as Text only; with PsiProxy they start Full, as PsiProxy lightens them itself. A style you choose in View, Page style or Set up stays on every route, and if you choose Full or Lighter without PsiProxy, PsiWeb asks once, on a big page, whether Text only would suit better. Text only leaves out the words sites hide for screen readers. Lighter puts a site's menus and footer on a line each. Reader on a front page lists its headlines. If the web helper doesn't answer, PsiWeb says so and offers to open the page directly this time.</p>
+    <div class="split" id="psiweb-ahead">
+      <div>
+        <h3 class="h3-lg reveal">A page ahead.</h3>
+        <p class="body reveal">Set up PsiWeb's Pages tab has Fetch the next page ahead. While you read, PsiWeb quietly fetches an article's next page, the first headlines of a front page and the link you've rested on, so they open at once. It starts on when PsiProxy on a computer is the route over the network, and off on a modem or going direct. It holds back when memory is short or the line is slow, and never shows as busy.</p>
+        <p class="body reveal">Test in Connection settings opens a page and says how it came: "through the Atom modem helper in 1.5 s", say.</p>
+      </div>
+      <figure class="frame reveal">
+        <img src="img/psiweb-pages.png" width="1124" height="456" alt="Set up PsiWeb's Pages tab: Page style Text only, Text only is the standard without PsiProxy, it skips big sites' menus; Pictures Only when asked; Fetch the next page ahead Off; with Test, Cancel and OK." loading="lazy" decoding="async">
+        <figcaption>Set up, Pages, on a modem.</figcaption>
+      </figure>
+    </div>
+    <h3 class="h3-lg center-text sub-head reveal" id="psiproxy">PsiProxy, the free web helper.</h3>
+    <p class="body narrow-text center-text reveal">PsiProxy runs on a computer at home. It fetches each page for PsiWeb, takes out what a Psion can't use and sends the rest small: the BBC News front page comes to 18 KB instead of 970 KB. Sites that build their pages with scripts open too, drawn first in a browser of its own. While you read, it keeps the next articles ready, so they come at once. Its own page, at <code>psiproxy</code> in PsiWeb or from any browser at home, has its switches and a guide. An installer sets it up on Linux or a Mac as a service that starts with the computer.</p>
+    <p class="center-text reveal"><a class="link-arrow" href="https://github.com/danieledge/psiproxy">PsiProxy on GitHub</a></p>
     <h3 class="h3-lg center-text sub-head reveal">Search without a helper.</h3>
     <p class="body narrow-text center-text reveal">Type words where the address goes and they're searched for, with DuckDuckGo's page without scripts or FrogFind, no helper needed. Addresses complete from your favourites and history. Cookies can be kept for next time. Big sites such as Wikipedia, Reddit and CNN get a line at the top offering their own lighter edition. A page saves as big as the disk will take.</p>
     <h3 class="h3-lg center-text sub-head reveal">Open in full browser. <em>Highly experimental.</em></h3>
@@ -1146,7 +1175,7 @@
       <div>
         <p class="body-lg reveal">On the netBook PsiMail uses the whole screen. Manila folders, yellow envelopes for unread mail, red flags. Under the folders, the rest of today's events. Under the preview, its pictures, and Reply, Forward, Archive and Flag for the pen.</p>
         <p class="body reveal">With the network card or a dial up connection open, new mail appears at once. Through the Atom modem helper it checks every ten minutes. The box in the title band says the route and who does the encryption, with a light. Tap it for Status information. Behind other programs, with nothing to fetch, its engine rests and hands its memory back, and starts again quietly when it's needed.</p>
-        <p class="body reveal">Set up asks about PsiProxy once, when it's new, in a question of its own. Disconnect, then Check mail, and it dials again through the modem straight away.</p>
+        <p class="body reveal">Set up asks about PsiProxy once, when it's new, in a question of its own. Disconnect, then Check mail, and it dials again through the modem straight away. The box says Mail on or Mail off, for its own link to the server, beside the toolbar's Internet line.</p>
       </div>
     </div>
     <ul class="chips reveal" aria-label="PsiMail's keys">
@@ -1154,6 +1183,15 @@
       <li><kbd>Ctrl+Q</kbd> Week, Month or Day list</li>
       <li><kbd>Shift+Ctrl+O</kbd> Work offline</li>
     </ul>
+    <div class="split sub-head" id="psimail-folders">
+      <div>
+        <h3 class="h3-lg reveal">Every folder.</h3>
+        <p class="body reveal">PsiMail lists every folder on the server, Inbox, Drafts, Sent, Archive, Spam and Trash first, as mail programs show them, then the rest in the server's order. A folder that holds others stays above them. On an account with hundreds, it keeps 300 and the standard ones always, and says how many it left out.</p>
+      </div>
+      <figure class="frame reveal">
+        <img src="img/psimail-folders.png" width="344" height="528" alt="PsiMail's folders: Example, then Inbox, Drafts, Sent, Archive, Spam and Trash, then Alerts with System Alerts under it." loading="lazy" decoding="async">
+      </figure>
+    </div>
     <h3 class="h3-lg center-text sub-head reveal">Find, rules and signatures.</h3>
     <p class="body narrow-text center-text reveal">Find works offline, through the mail already on this Psion. Up to eight rules move new mail to a folder, flag it or mark it read as it arrives. Replies can have a signature of their own.</p>
     <p class="body narrow-text center-text reveal">New in PsiWeb 0.85 to 0.88 and PsiMail 1.00 to 1.03.</p>
@@ -1189,14 +1227,14 @@
 
     <h3 class="h3-lg center-text sub-head reveal">Asleep in the background.</h3>
     <p class="body narrow-text center-text reveal">Idle, Linux gives its caches back to the Psion. Behind another program with only a shell at its prompt, it goes to sleep: its memory is written to the card and handed back, and Linux carries on where it was when you switch to it. A shell at its prompt holds about 4.7 MB awake and 2 MB asleep. Preferences sets when it sleeps: after 1, 5 or 15 minutes, or never.</p>
-    <p class="body narrow-text center-text reveal">When memory runs down, Coda asks Linux too. It gives back what its programs have finished with, and a big block goes back to the Psion as soon as a program frees it. Asked to sleep, it sleeps if Preferences allow; Free memory's Put PsiLinux to sleep sends it at once. While a program runs or a connection is open, Linux is left alone.</p>
+    <p class="body narrow-text center-text reveal">When memory runs down, Coda asks Linux too. It gives back what its programs have finished with, and a big block goes back to the Psion as soon as a program frees it. Asked to sleep, it sleeps if Preferences allow, and when memory is very low it sleeps even if they say never, as long as it's idle at its prompt behind another program. Free memory's Put PsiLinux to sleep sends it at once. While a program runs or a connection is open, Linux is left alone.</p>
 
     <h3 class="h3-lg center-text sub-head reveal">A few commands.</h3>
     <div class="term-list reveal" role="region" aria-label="Examples of the epoc command" tabindex="0">
 <pre><code>ls /psion/c/Documents           <span class="c"># Psion's disks under /psion</span>
 cd /psion/c/Documents
 epoc open "Garden notes.docx"   <span class="c"># opens it in Word, as a tap would</span>
-epoc run Agenda                 <span class="c"># starts Agenda, or brings it forward</span>
+epoc run Agenda                 <span class="c"># starts Agenda and waits until it's up</span>
 epoc ps                         <span class="c"># programs and processes, with memory</span>
 epoc close Word                 <span class="c"># asks Word to save and close</span>
 epoc clip get | wc -w           <span class="c"># count the words on the Psion's clipboard</span>
@@ -1204,7 +1242,7 @@ epoc note "Backup done"         <span class="c"># a message on the Psion's scree
 epoc shot                       <span class="c"># a screenshot, as a PNG</span>
 epoc info                       <span class="c"># machine, Coda's edition, battery, memory</span></code></pre>
     </div>
-    <p class="body narrow-text center-text reveal">Lists come out tab separated, or as JSON, with exit codes for scripts. This one backs up Documents to the card, in a folder named by the date.</p>
+    <p class="body narrow-text center-text reveal"><code>epoc run</code> and <code>epoc open</code> come back once the program is up, so <code>time epoc run Calc</code> times the start; <code>--no-wait</code> comes back at once. Lists come out tab separated, or as JSON, with exit codes for scripts. This one backs up Documents to the card, in a folder named by the date.</p>
     <div class="term-list reveal" role="region" aria-label="A backup script using epoc" tabindex="0">
 <pre><code>#!/bin/sh
 to=/psion/d/Backup/$(date +%Y-%m-%d)
@@ -1281,11 +1319,22 @@ epoc note "Documents backed up"</code></pre>
         <figcaption>Control panel, Memory.</figcaption>
       </figure>
     </div>
-    <p class="body narrow-text reveal"><strong>PsiMemMan</strong>, Coda's memory and task manager, lists every program and process with its threads, memory, heap, stacks and priority, switches to a program, closes it, ends one that doesn't answer, and gives back the unused heap of every program at once. Tap the program's name at the top of any toolbar, or type <kbd>tasks</kbd> in PsiHub. Ideas from EPOC Task Manager by Robin Hood.</p>
+    <p class="body narrow-text reveal"><strong>PsiMemMan</strong>, Coda's memory and task manager, opens on Programs: the free memory at the top, then the programs you have open, the one you were using first, each with its document and about how much closing it gives back. Enter, or a second tap, switches to one. Del closes it, saving first, as Psion's own list did, and it asks only when something could be lost: the program is busy, holds a connection, or doesn't answer. Esc takes you back. Tap the program's name at the top of any toolbar, press Ctrl+J on the System screen, or type <kbd>tasks</kbd> in PsiHub.</p>
     <figure class="pair reveal">
       <div class="frame"><img src="img/memman-tasklist-before.png" width="912" height="440" alt="Psion's Open files / programs list: System, Word, Sheet, Data, Agenda, Time, Calc and Sketch, with Close file, Done and Go to file." loading="lazy" decoding="async"><figcaption>Psion's</figcaption></div>
-      <div class="frame"><img src="img/memman-tasks.png" width="1120" height="792" alt="PsiMemMan's Tasks view: each program and process with its memory, heap, stacks, priority and kind." loading="lazy" decoding="async"><figcaption>PsiMemMan</figcaption></div>
+      <div class="frame"><img src="img/memman-programs-list.png" width="1280" height="352" alt="PsiMemMan's Programs list: 19 MB free, then Word in use, PsiPDF busy, Agenda, Sheet and the System screen, each with what closing it frees, and Switch to, Close, Memory &amp; tasks and Free memory on the toolbar." loading="lazy" decoding="async"><figcaption>PsiMemMan</figcaption></div>
     </figure>
+    <div class="split">
+      <figure class="frame reveal">
+        <img src="img/memman-tasks.png" width="1120" height="792" alt="PsiMemMan's Tasks view: each program and process with its memory, heap, stacks, priority and kind." loading="lazy" decoding="async">
+        <figcaption>Behind Memory &amp; tasks: every program and process.</figcaption>
+      </figure>
+      <div>
+        <h3 class="h3-lg reveal">The detail, one button away.</h3>
+        <p class="body reveal">Memory &amp; tasks opens the detailed views: every program and process with its threads, memory, heap, stacks and priority, ending one that doesn't answer, and giving back the unused heap of every program at once. Ctrl+Q comes back to Programs. Ideas from EPOC Task Manager by Robin Hood.</p>
+        <p class="body reveal">Close background programs, and PsiHub's Close all programs, leave open a program that's busy, connected or online, and say so in the question.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1306,7 +1355,7 @@ epoc note "Documents backed up"</code></pre>
           <li><strong>Memory</strong>, what's free, the programs holding most, and Trim now</li>
           <li><strong>Start-up</strong>, what opens after each start</li>
           <li><strong>Screenshot</strong>, the key that saves the screen</li>
-          <li><strong>Diagnostics</strong>, a debug mode that keeps every program's log on the card, and Save: to report a problem, attach the folder to an issue at <a href="https://github.com/danieledge/coda/issues">github.com/danieledge/coda/issues</a></li>
+          <li><strong>Diagnostics</strong>, a debug mode that keeps every program's log on the card, and Save, which shows how far it's got: to report a problem, attach the folder to an issue at <a href="https://github.com/danieledge/coda/issues">github.com/danieledge/coda/issues</a></li>
         </ul>
       </div>
       <figure class="frame reveal">
@@ -1324,11 +1373,16 @@ epoc note "Documents backed up"</code></pre>
     <p class="body-lg reveal">The netBook has no flash ROM. At every cold start it copies the whole operating system off the card. So Coda is one file on the card, and Psion's own image sits right next to it.</p>
     <p class="body reveal">Coda keeps what you don't use all the time on the card as ordinary files: Calc, Sketch and Record (and Psion's Sketch and Record), PsiAmp, PsiHub, Help, the typefaces, Smooth text's styles, the Office converters, the spelling dictionary and thesaurus, Sketch's clip art, the alarm sounds, Word's templates and OPL's demos. They cost no memory until you use them, so the System screen starts with about 20 MB free. Coda full, which keeps everything inside for a netBook without its card, is coming soon.</p>
     <p class="body reveal">PsiBoot's File, Switch image lists the card's images by what they are: Coda, most free memory, and Psion's own (Coda full, no card needed, is coming soon). Before a switch it backs up your C: disk, keeping three dated copies, each read back and checked before the oldest is removed, and afterwards it offers to put it back. A restore keeps the new image's connection settings and copies your dial-up services into them.</p>
+    <p class="body reveal">Starting from the card, or switching with a backup, shows a progress dialog all the way: the card made ready, then each file as it's copied and checked. Stop leaves C: and the backups on the card as they were. Last, it says the start-up picture shows while the image loads.</p>
   </div>
   <div class="wrap">
     <figure class="frame wide md reveal">
       <img src="img/boot-switch-beta1.png" width="1060" height="282" alt="PsiBoot's Switch image: Start with Psion's own, Back up C: first ticked, C: starts afresh: its backup can be restored after." loading="lazy" decoding="async">
       <figcaption>Switch image, in PsiBoot.</figcaption>
+    </figure>
+    <figure class="frame wide md reveal">
+      <img src="img/boot-backup.png" width="940" height="320" alt="Backing up C: to the card: Copying 10 of 30 files, the file's name, a bar a little over half full, and Stop leaves C: and the backups on the card as they were, with Stop." loading="lazy" decoding="async">
+      <figcaption>The backup, as it goes.</figcaption>
     </figure>
     <figure class="pair reveal">
       <div class="frame"><img src="img/banner-before.png" width="560" height="270" alt="Psion's boot banner." loading="lazy" decoding="async"><figcaption>Psion's</figcaption></div>
@@ -1354,7 +1408,8 @@ epoc note "Documents backed up"</code></pre>
             <tr><td>nFTP</td><td>PsiTerm's SFTP</td></tr>
             <tr><td>Browse dialog</td><td>PsiFiles</td></tr>
             <tr><td>Calc</td><td>The new one; Psion's removed</td></tr>
-            <tr><td>Sketch, Record</td><td>New ones; Psion's Record on Extras, Psion's Sketch in Programs</td></tr>
+            <tr><td>Sketch, Record</td><td>New ones; Psion's hidden, in Control panel, Programs</td></tr>
+            <tr><td>Find files</td><td>Files' Find; Psion's on Find again</td></tr>
             <tr><td>Word's .doc viewer</td><td>Word opens .doc itself</td></tr>
             <tr><td>Example files</td><td>Coda's own, on the card</td></tr>
           </tbody>
@@ -1423,6 +1478,7 @@ epoc note "Documents backed up"</code></pre>
       <li><a href="https://github.com/danieledge/psimail">PsiMail</a></li>
       <li><a href="https://github.com/danieledge/psiweb">PsiWeb</a></li>
       <li><a href="https://github.com/danieledge/psilinux">PsiLinux</a></li>
+      <li><a href="https://github.com/danieledge/psiproxy">PsiProxy</a></li>
       <li><a href="https://github.com/danieledge/psiboost">PsiBoost</a></li>
     </ul>
   </div>
