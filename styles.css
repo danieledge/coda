@@ -566,3 +566,4 @@ body { overflow-wrap: break-word; }
 .release-name { margin: 0; font-size: 22px; }
 .release-pre { font-size: 13px; font-weight: 600; padding: 2px 9px; border-radius: 999px; color: var(--light-muted); box-shadow: 0 0 0 1px var(--light-line); }
 .release-row { margin-top: 8px; gap: 22px; }
+.body-lg.narrow-text.center-text { margin-left: auto; margin-right: auto; }
