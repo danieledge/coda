@@ -229,6 +229,12 @@
       <dt>The netBook doesn't start from the card.</dt>
       <dd>Put the card in your computer and check <code>OS.IMG</code> is in its top folder, then unzip the Coda zip onto it again. Eject the card before you take it out.</dd>
 
+      <dt>I can't format the Coda card: "In use".</dt>
+      <dd>While Coda runs from a card, the system holds some of its files open (the typefaces, PsiHub and Clips), so the card can't be formatted. In PsiBoot, choose File, Switch image (<kbd>Shift+Ctrl+W</kbd>), pick Psion's own and let it restart. Then format the card. To come back to Coda, run PsiBoot again and use the same command. Or take the card out and format it in your computer.</dd>
+
+      <dt>A program says a file is "corrupt", or shows a KERN-EXEC error.</dt>
+      <dd>Restart the netBook from PsiBoot (File, Restart) and try again. If it comes back, please <a href="https://github.com/danieledge/coda/issues">open an issue</a> with the version from About, what you did just before, and the log from <code>Coda\Diagnostics\System.log</code> on the card (turn on Control panel, Diagnostics first).</dd>
+
       <dt>The silkscreen buttons open the wrong programs.</dt>
       <dd>This can happen after you restore an older backup of the Internal disk (C:): the old Shell settings come back and no longer match Coda. In Files, open the Internal disk, then System, Apps, Shell, delete <code>Shell.ini</code> and restart the netBook. The Shell makes a fresh one. It only resets your Extras bar choices and your own button assignments (Control panel, Extras bar). If the buttons are still wrong, please <a href="https://github.com/danieledge/coda/issues">open an issue</a> and say which machine you have.</dd>
 
