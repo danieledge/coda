@@ -558,3 +558,11 @@ body { overflow-wrap: break-word; }
 .tools .eyebrow .af-new { vertical-align: 2px; }
 .card-soon { opacity: 0.75; }
 .download-row + .body { margin-top: 18px; }
+
+/* Download page: the list of releases */
+.release-list { display: grid; gap: 18px; margin-top: 26px; }
+.release { gap: 10px; }
+.release-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.release-name { margin: 0; font-size: 22px; }
+.release-pre { font-size: 13px; font-weight: 600; padding: 2px 9px; border-radius: 999px; color: var(--light-muted); box-shadow: 0 0 0 1px var(--light-line); }
+.release-row { margin-top: 8px; gap: 22px; }
