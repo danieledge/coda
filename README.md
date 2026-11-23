@@ -1,51 +1,43 @@
-# Coda for the Psion netBook: the website
+# Coda for the Psion netBook
 
-A single static page: `index.html`, `styles.css`, `main.js`, `favicon.svg` and `img/`. No build step, no frameworks, no external requests.
+**Your netBook, brought forward.** Coda is a modernised system for the Psion netBook: new programs for email, the web, SSH, PDFs, pictures, music and Linux, themes and smooth text, more free memory, and a lot of small fixes. It comes as one zip that you unzip onto the netBook's CompactFlash card. Psion's own system is on the card beside it, so you can always go back.
 
-Every image in `img/` is a real screenshot of the netBook's screen, taken in the netBook emulator or shown in the PsiCoda diary (github.com/danieledge/PsiCoda), saved as lossless palette PNGs. Screenshots shown larger than their own size are switched to `image-rendering: pixelated` by `main.js`, so they stay crisp.
+![Coda on the Psion netBook: Linux, Office files, the modern web, email and calendar, themes and the Extras bar](img/promo/coda-collage-wide.png)
 
-## Preview locally
+## Links
 
-Open `index.html` in a browser. That's all.
+| | |
+|---|---|
+| **[Download Coda](https://danieledge.github.io/coda/download.html)** | Every available release, ready to unzip onto the card |
+| **[Install guide](https://danieledge.github.io/coda/install.html)** | Step by step, with pictures |
+| **[What's new](https://danieledge.github.io/coda/#new)** | The latest changes, with screenshots |
+| **[The website](https://danieledge.github.io/coda/)** | Everything Coda does, chapter by chapter |
+| **[The diary (blog)](https://github.com/danieledge/PsiCoda)** | A picture of every change as it was made |
+| **[Releases](https://github.com/danieledge/coda/releases)** | Release notes and the zip files on GitHub |
+| **[Issues](https://github.com/danieledge/coda/issues)** | Report a problem, ask a question, suggest an idea |
+| **[Buy me a coffee](https://buymeacoffee.com/danedge)** | If Coda is useful to you |
 
-## Deploy to Cloudflare Pages
+## Install in short
 
-1. Push this folder to a GitHub repository.
-2. Cloudflare dashboard, Workers and Pages, Create, Pages, Connect to Git, and pick the repository.
-3. Framework preset: None. Build command: leave empty. Build output directory: `/`.
-4. Deploy. The `_headers` file sets caching (images cached for 30 days, the page always revalidated) and a strict Content Security Policy.
+1. **Back up your CompactFlash card** to your computer, and keep your netBook's own `OS.IMG` safe.
+2. Download the Coda zip from the [Download page](https://danieledge.github.io/coda/download.html).
+3. Unzip it into the card's top folder, and let it replace `OS.IMG`.
+4. Eject the card properly, put it in the netBook, and start up from cold.
 
-Or without Git: `npx wrangler pages deploy . --project-name coda` from this folder.
+The [install guide](https://danieledge.github.io/coda/install.html) has the details, and how to go back to Psion's own system.
 
-If you change the one line inline script in `index.html`, update its `sha256` hash in the `Content-Security-Policy` line of `_headers`:
+## Status
 
-```
-printf '%s' 'document.documentElement.classList.add("js")' | openssl dgst -sha256 -binary | base64
-```
+Coda Beta 1 is an early beta. It has been tried on a netBook with a serial device that behaves like a modem, and in an emulator. It has **not** been tried with a LAN (Ethernet) card yet. Expect rough edges, back up first, and use it at your own risk.
 
-## Deploy to GitHub Pages
+Feedback is very welcome. Please [open an issue](https://github.com/danieledge/coda/issues): what works, what doesn't, and what you would like to see.
 
-1. Push this folder to a GitHub repository.
-2. Settings, Pages, Source: Deploy from a branch. Branch: `main`, folder `/ (root)`.
-3. The site appears at `https://<user>.github.io/<repo>/`. All paths are relative, so it works from a subfolder.
+## About this repository
 
-GitHub Pages ignores `_headers`; it sets its own caching. Add an empty `.nojekyll` file if you ever add files or folders starting with an underscore that need serving.
+This repository holds the Coda website (`index.html`, `install.html`, `download.html`) and its screenshots in `img/`. Every picture is a real screenshot of the netBook's screen, taken in the netBook emulator. The releases are on the [Releases](https://github.com/danieledge/coda/releases) page.
 
-## Custom domain
+## Thanks and licence
 
-Either host lets you add one in its settings. Once the final address is known, change the `og:image` meta tag in `index.html` to the full URL (for example `https://example.com/img/system-coda.png`) so link previews show the picture.
+Coda is built on c1.60a, the 2005 community bug-fix patch for the netBook by Poke of Patisoners (CC BY-NC-SA 3.0 CZ). Like c1.60a, Coda is free and non-commercial. A lot of other people's work is in Coda too: the licences and credits are on the card in `LICENCES\`.
 
-## How the page is laid out
-
-A hero, a short "What's new" grid, the story, then four chapters, each opened by a dark band with links to its sections:
-
-1. Look and feel: themes, wallpapers, the toolbar and clock, fonts, icons, the rushed parts (the comparison gallery).
-2. Getting things done: PsiHub, PsiFiles, Share, Clips, Office files and PDF, Agenda, Sync, Alarms, the new programs, spelling, PsiAmp.
-3. Connected: mail, web and terminal; PsiWeb; PsiMail; Linux.
-4. Under the hood: start up, tasks and memory, the Control panel, PsiBoot, removed and replaced, small touches.
-
-The navigation links the chapters; `main.js` marks the one in view. On a phone the links scroll sideways under the bar. Add a new feature to the chapter it belongs to, and to "What's new" while it is new: tiles for the two or three biggest features, a line each for the rest, the date, and a link to the latest diary post. Every image must be used on the page; no inline `style` attributes (the CSP in `_headers` blocks them).
-
-## Copy rules
-
-British English, short plain sentences, no em or en dashes. Describe only what is finished.
+Coda is an unofficial project. It is not made, endorsed or supported by Psion, and is not affiliated with Psion or its owners. Psion and netBook are trademarks of their respective owners.
