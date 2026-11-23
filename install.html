@@ -229,6 +229,9 @@
       <dt>The netBook doesn't start from the card.</dt>
       <dd>Put the card in your computer and check <code>OS.IMG</code> is in its top folder, then unzip the Coda zip onto it again. Eject the card before you take it out.</dd>
 
+      <dt>The silkscreen buttons open the wrong programs.</dt>
+      <dd>This can happen after you restore an older backup of the Internal disk (C:): the old Shell settings come back and no longer match Coda. In Files, open the Internal disk, then System, Apps, Shell, delete <code>Shell.ini</code> and restart the netBook. The Shell makes a fresh one. It only resets your Extras bar choices and your own button assignments (Control panel, Extras bar). If the buttons are still wrong, please <a href="https://github.com/danieledge/coda/issues">open an issue</a> and say which machine you have.</dd>
+
       <dt>Something went wrong.</dt>
       <dd>Turn on Control panel, Diagnostics. It saves a log of what happened in the <code>Coda\Diagnostics</code> folder on the card. The logs name the servers and web pages your programs used, but not passwords, keys or messages: look through them, then attach that folder to an issue on <a href="https://github.com/danieledge/coda/issues">GitHub</a>.</dd>
 
