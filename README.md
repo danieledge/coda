@@ -10,7 +10,7 @@
 |---|---|
 | **[Download Coda](https://danieledge.github.io/coda/download.html)** | Every available release, ready to unzip onto the card |
 | **[Install guide](https://danieledge.github.io/coda/install.html)** | Step by step, with pictures |
-| **[What's new](https://danieledge.github.io/coda/#new)** | The latest changes, with screenshots |
+| **[Beta 1](https://danieledge.github.io/coda/#beta)** | What Coda is, and what to know about the first beta |
 | **[The website](https://danieledge.github.io/coda/)** | Everything Coda does, chapter by chapter |
 | **[The diary (blog)](https://github.com/danieledge/PsiCoda)** | A picture of every change as it was made |
 | **[Releases](https://github.com/danieledge/coda/releases)** | Release notes and the zip files on GitHub |

@@ -385,20 +385,6 @@ h3 { font-size: 21px; font-weight: 650; line-height: 1.2; }
 .sub-head { margin-top: clamp(64px, 8vw, 96px); }
 .visually-h2 { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-/* What's new: a small bento of the week's features */
-.new-grid { list-style: none; padding: 0; margin: 48px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: auto; gap: 20px; }
-.new-tile a {
-  display: flex; flex-direction: column; height: 100%; color: var(--light-fg);
-  background: var(--light-card); border-radius: var(--radius); overflow: hidden;
-  box-shadow: 0 0 0 1px var(--light-line); transition: transform .25s cubic-bezier(.2,.7,.2,1), box-shadow .25s ease;
-}
-.new-tile a:hover { text-decoration: none; transform: translateY(-3px); box-shadow: 0 0 0 1px var(--light-line), 0 18px 40px rgba(10, 30, 80, 0.12); }
-.new-tile a:active { transform: translateY(-1px); }
-.new-tile img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: left top; background: #fff; border-bottom: 1px solid var(--light-line); }
-.new-tile.big { grid-column: span 2; grid-row: span 2; }
-.new-tile.big img { aspect-ratio: 4 / 3; flex: 1; }
-.new-text { display: block; padding: 16px 18px 18px; font-size: 15px; color: var(--light-muted); }
-.new-text strong { display: block; font-size: 19px; color: var(--light-fg); margin-bottom: 2px; }
 
 /* Cards with a short picture */
 .card img.short { width: auto; max-height: 200px; margin: 0 auto 8px; }
@@ -417,13 +403,7 @@ h3 { font-size: 21px; font-weight: 650; line-height: 1.2; }
 h1, h2, h3 { text-wrap: balance; }
 .body, .body-lg, figcaption { text-wrap: pretty; }
 
-@media (max-width: 980px) {
-  .new-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .new-tile.big { grid-row: auto; }
-}
 @media (max-width: 720px) {
-  .new-grid { grid-template-columns: 1fr; gap: 16px; }
-  .new-tile.big { grid-column: auto; }
   .tick-list.two-col, .machine-cols, .footer-cols { grid-template-columns: 1fr; }
   .chapter-links a { font-size: 14px; padding: 7px 12px; }
 }
@@ -450,16 +430,12 @@ html, body { overflow-x: clip; }
 img, svg, video, canvas, iframe, input, select, textarea { max-width: 100%; }
 body { overflow-wrap: break-word; }
 .grid > *, .split > *, .feature > *, .pair > *, .formats > *, .stats > *, .note-card > *,
-.detail-grid > *, .new-grid > *, .machine-cols > *, .footer-cols > *, .tick-list.two-col > *,
+.detail-grid > *, .machine-cols > *, .footer-cols > *, .tick-list.two-col > *,
 .stack > *, .frame, .ba, figure, .wrap, .nav-inner > * { min-width: 0; }
 .ext-list li { overflow-wrap: anywhere; }
 .swap td { overflow-wrap: anywhere; }
 .chips li, .chapter-links li { max-width: 100%; }
 
-/* What's new: the toolbar's headline tile, two pictures stacked */
-.new-tile.big .new-pics { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 12px; padding: 16px 22px; background: #fff; border-bottom: 1px solid var(--light-line); }
-.new-tile.big .new-pics img { width: 100%; aspect-ratio: auto; object-fit: contain; flex: none; border: 0; }
-.new-tile.big .new-text strong { font-size: 24px; }
 
 /* Everything in Coda: the complete list, grouped as the page is */
 .all-features { margin-top: 32px; columns: 3 250px; column-gap: 40px; }
@@ -474,8 +450,6 @@ body { overflow-wrap: break-word; }
 .af-new { font-style: normal; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent); margin-left: 8px; padding: 1px 7px; border-radius: 980px; box-shadow: inset 0 0 0 1px currentColor; vertical-align: 1px; }
 .sub-head-sm { margin-top: 48px; }
 @media (max-width: 720px) {
-  .new-tile.big .new-pics { padding: 14px; gap: 10px; }
-  .new-tile.big .new-text strong { font-size: 19px; }
 }
 .deck { margin-left: max(-3.5%, calc(-1 * var(--gutter))); margin-right: max(-3.5%, calc(-1 * var(--gutter))); }
 @media (max-width: 980px) {
@@ -483,12 +457,6 @@ body { overflow-wrap: break-word; }
 }
 @media (max-width: 720px) { .af-list li { padding: 8px 0; } }
 
-/* What's new: a tile picture shown whole, and the line for each of the rest */
-.new-tile img.fit { object-fit: contain; object-position: center; padding: 12px; box-sizing: border-box; }
-.also-new { margin: 32px 0 0; }
-.also-new li { display: flex; flex-wrap: wrap; gap: 0 12px; align-items: baseline; }
-.also-new span { display: inline; }
-.new-tile.big .new-pics img.half { width: 46%; align-self: center; }
 
 /* Install guide (install.html) */
 .install-hero { padding-bottom: clamp(72px, 10vw, 120px); }
@@ -567,3 +535,11 @@ body { overflow-wrap: break-word; }
 .release-pre { font-size: 13px; font-weight: 600; padding: 2px 9px; border-radius: 999px; color: var(--light-muted); box-shadow: 0 0 0 1px var(--light-line); }
 .release-row { margin-top: 8px; gap: 22px; }
 .body-lg.narrow-text.center-text { margin-left: auto; margin-right: auto; }
+
+/* Beta 1 announcement, under what Coda is */
+.beta-announce { padding-top: clamp(56px, 8vw, 96px); padding-bottom: clamp(56px, 8vw, 96px); }
+.beta-announce h2 { margin-bottom: 18px; }
+.beta-row.start { justify-content: flex-start; margin: 0 0 14px; }
+.beta-announce .cta-row { margin-top: 28px; }
+.small-print { font-size: 15px; margin-top: 28px; }
+.everything .all-features { margin-top: 36px; }
