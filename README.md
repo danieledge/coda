@@ -2,6 +2,8 @@
 
 **Your netBook, brought forward.** Coda is a modernised system for the Psion netBook: new programs for email, the web, SSH, PDFs, pictures, music and Linux, themes and smooth text, more free memory, and a lot of small fixes. It comes as one zip that you unzip onto the netBook's CompactFlash card. Psion's own system is on the card beside it, so you can always go back.
 
+The name is a musical term: a coda is the closing passage that brings a piece to its proper end, and this finishes what Psion didn't.
+
 ![Coda on the Psion netBook: Linux, Office files, the modern web, email and calendar, themes and the Extras bar](img/promo/coda-collage-wide.png)
 
 ## Links
