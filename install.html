@@ -106,9 +106,9 @@
           <h3 class="h3-lg">Download Coda.</h3>
           <p class="body">Coda comes as one zip of about 34 MB: everything that goes on the card, ready to unzip. It is free: the Download page lists every available release. It has been tried on a netBook with a serial device that behaves like a modem, and in an emulator, but not yet with a LAN (Ethernet) card.</p>
           <div class="cta-row download-row">
-            <a class="btn" href="download.html">Download Coda Beta 1</a>
+            <a class="btn" href="download.html">Download Coda</a>
             <span class="caption">Free, about 34 MB</span>
-            <p class="beta-row"><span class="beta-tag">Beta 1</span><span>The first beta: expect bugs, and back up first.</span><a href="https://github.com/danieledge/coda/issues">Report issues on GitHub</a></p>
+            <p class="beta-row"><span class="beta-tag">Beta</span><span>An early beta: expect bugs, and back up first.</span><a href="https://github.com/danieledge/coda/issues">Report issues on GitHub</a></p>
           </div>
           <p class="body">If Coda is useful to you, you can <a href="https://buymeacoffee.com/danedge">buy me a coffee</a>.</p>
         </div>
@@ -185,7 +185,7 @@
       </div>
       <div class="card dark-card card-soon">
         <h3>Coda full <em class="af-new">Coming soon</em></h3>
-        <p><strong class="tag">No card needed</strong> Everything in the system itself, for a netBook you use without its card. A little less memory free. Not in Beta 1: it's coming soon.</p>
+        <p><strong class="tag">No card needed</strong> Everything in the system itself, for a netBook you use without its card. A little less memory free. Not in the beta yet: it's coming soon.</p>
       </div>
     </div>
 
@@ -200,9 +200,25 @@
 <section class="light" id="update" aria-labelledby="update-title">
   <div class="wrap narrow">
     <p class="eyebrow reveal">Updates</p>
-    <h2 id="update-title" class="reveal">Staying up to date.</h2>
-    <p class="body-lg reveal">When a new Coda comes out, download it from the same place and unzip it over the card, replacing what's there. Your documents and settings on the Internal disk are not touched by the card.</p>
-    <p class="body reveal">Coda's programs that update themselves, such as PsiMail and PsiWeb, can also be updated from their own Tools menus.</p>
+    <h2 id="update-title" class="reveal">Updating Coda.</h2>
+    <p class="body-lg reveal">Starting a new Coda empties the Internal disk (C:). Back it up first, then bring it back. These steps are for Coda Beta 1.05 and 1.06, and 1.03.</p>
+
+    <ol class="plain-list body reveal">
+      <li><strong>PsiTerm users only.</strong> SSH keys and saved server passwords are left out of backups. Close PsiTerm. On the System screen press <kbd>Ctrl+K</kbd> and tick Show &lsquo;System&rsquo; folder. On the Internal disk, open System, then Apps. Select the PsiTerm folder and press <kbd>Ctrl+C</kbd>. Go to the top folder of the card and press <kbd>Ctrl+V</kbd>. This copy holds your private keys, so look after it.</li>
+      <li><strong>Back up.</strong> Do this in Coda, not in Psion&rsquo;s own system. Open PsiBoot from the Extras bar. Choose Backup, Back up C: to the card (<kbd>Shift+Ctrl+B</kbd>). Answer Yes if it asks. Wait until the new backup is listed.</li>
+      <li><strong>Save the card.</strong> Switch off and put the card in your computer. Copy everything on it to a folder on your computer.</li>
+      <li><strong>Unzip the new Coda onto the card</strong> and replace files when asked. Never delete or replace a whole folder: your Linux files are in the Linux folder. On Windows, use Extract All and set the card&rsquo;s top folder as the destination, not a new folder. On a Mac, do not drag folders in the Finder. Type this in Terminal, with your zip&rsquo;s name and your card&rsquo;s name: <code>unzip -o ~/Downloads/Coda.zip -d /Volumes/CARD</code></li>
+      <li><strong>Copy your own versions back,</strong> if you changed an example file, a Word template or PsiTerm&rsquo;s Extra snippets file. Use the copy from step 3. Then eject the card.</li>
+      <li><strong>Start from cold.</strong> Put the card in. Unplug the mains adapter, take the main battery pack out for a few seconds (leave the backup battery alone), put it back and switch on. Wait for Preparing Coda to finish.</li>
+      <li><strong>Restore.</strong> If PsiBoot asks to restore C:, answer Yes. If it doesn&rsquo;t ask, open PsiBoot, choose Backup, Restore C: from the card (<kbd>Shift+Ctrl+R</kbd>), pick your backup and answer Yes. When it asks Restart now, answer Yes. Don&rsquo;t make a new backup before you have restored.</li>
+      <li><strong>Restart once more.</strong> In PsiBoot choose File, Restart (<kbd>Shift+Ctrl+T</kbd>). Your choice of program icons comes back.</li>
+      <li><strong>PsiTerm users:</strong> close PsiTerm. Tick Show &lsquo;System&rsquo; folder again. Copy the PsiTerm folder from the card into System, Apps on the Internal disk. Answer Yes to copy into the folder, then Yes to all. Delete the folder from the card.</li>
+    </ol>
+
+    <h3 class="h3-lg sub-head reveal">Set these again.</h3>
+    <p class="body reveal">A restore does not bring back your wallpaper, the System screen&rsquo;s preferences (<kbd>Ctrl+K</kbd>), your own button choices (Control panel, Extras bar) or your system font (Control panel, Text). Passwords are never in a backup: type them again in PsiMail, Sync and on websites. Your dial-up settings come back; check any other connection settings.</p>
+    <p class="body reveal">Coming from 1.03? Choose again which programs to hide in Control panel, Programs, Show.</p>
+    <p class="body reveal">Coda&rsquo;s programs that update themselves, such as PsiMail and PsiWeb, can also be updated from their own Tools menus.</p>
   </div>
 </section>
 
@@ -229,14 +245,14 @@
       <dt>The netBook doesn't start from the card.</dt>
       <dd>Put the card in your computer and check <code>OS.IMG</code> is in its top folder, then unzip the Coda zip onto it again. Eject the card before you take it out.</dd>
 
-      <dt>I can't format the Coda card: "In use".</dt>
+      <dt>I can't format the Coda card: "Coda is using this disk" or "In use".</dt>
       <dd>The netBook holds some of a Coda card's files open, so it can't format that card, even after switching to Psion's own system. Take the card out and format it in your computer.</dd>
 
       <dt>A program says a file is "corrupt", or shows a KERN-EXEC error.</dt>
       <dd>Restart the netBook from PsiBoot (File, Restart) and try again. If it comes back, please <a href="https://github.com/danieledge/coda/issues">open an issue</a> with the version from About, what you did just before, and the log from <code>Coda\Diagnostics\System.log</code> on the card (turn on Control panel, Diagnostics first).</dd>
 
       <dt>The silkscreen buttons open the wrong programs.</dt>
-      <dd>This can happen after you restore an older backup of the Internal disk (C:): the old Shell settings come back and no longer match Coda. In Files, open the Internal disk, then System, Apps, Shell, delete <code>Shell.ini</code> and restart the netBook. The Shell makes a fresh one. It only resets your Extras bar choices and your own button assignments (Control panel, Extras bar). If the buttons are still wrong, please <a href="https://github.com/danieledge/coda/issues">open an issue</a> and say which machine you have.</dd>
+      <dd>This can happen after you restore an older backup of the Internal disk (C:): the old Shell settings come back and no longer match Coda. From Coda Beta 1.07 a restore leaves those settings out, and Coda repairs a wrong list of buttons when it starts, so update if you can. On an older Coda: in Files, open the Internal disk, then System, Apps, Shell, delete <code>Shell.ini</code> and restart the netBook. The Shell makes a fresh one. It only resets your Extras bar choices and your own button assignments (Control panel, Extras bar). If the buttons are still wrong, please <a href="https://github.com/danieledge/coda/issues">open an issue</a> and say which machine you have.</dd>
 
       <dt>Something went wrong.</dt>
       <dd>Turn on Control panel, Diagnostics. It saves a log of what happened in the <code>Coda\Diagnostics</code> folder on the card. The logs name the servers and web pages your programs used, but not passwords, keys or messages: look through them, then attach that folder to an issue on <a href="https://github.com/danieledge/coda/issues">GitHub</a>.</dd>
@@ -253,7 +269,7 @@
     <h2 id="close-title" class="reveal">Ready when you are.</h2>
     <p class="body-lg narrow-text center-text reveal">Coda is free, and always will be. It is never sold.</p>
     <p class="cta-row center reveal">
-      <a class="btn" href="download.html">Download Coda Beta 1</a>
+      <a class="btn" href="download.html">Download Coda</a>
       <a class="link-arrow" href="index.html">See what Coda does</a>
     </p>
     <p class="beta-row reveal"><span class="beta-tag">Beta 1</span><span>Expect bugs - back up first.</span><a href="https://github.com/danieledge/coda/issues">Report issues on GitHub</a><a href="https://buymeacoffee.com/danedge">Buy me a coffee</a></p>
