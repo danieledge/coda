@@ -254,8 +254,11 @@
       <dt>The silkscreen buttons open the wrong programs.</dt>
       <dd>This can happen after you restore an older backup of the Internal disk (C:): the old Shell settings come back and no longer match Coda. From Coda Beta 1.07 a restore leaves those settings out, and Coda repairs a wrong list of buttons when it starts, so update if you can. On an older Coda: in Files, open the Internal disk, then System, Apps, Shell, delete <code>Shell.ini</code> and restart the netBook. The Shell makes a fresh one. It only resets your Extras bar choices and your own button assignments (Control panel, Extras bar). If the buttons are still wrong, please <a href="https://github.com/danieledge/coda/issues">open an issue</a> and say which machine you have.</dd>
 
+      <dt>The battery goes flat while the netBook is left alone.</dt>
+      <dd>Update to Coda Beta 1.07, which fixes two things that could stop the netBook switching itself off. On an older Coda, turn Control panel, Diagnostics off, and untick Clock from the Internet in Control panel, Internet time. A network or modem card left connected also keeps it awake.</dd>
+
       <dt>Something went wrong.</dt>
-      <dd>Turn on Control panel, Diagnostics. It saves a log of what happened in the <code>Coda\Diagnostics</code> folder on the card. The logs name the servers and web pages your programs used, but not passwords, keys or messages: look through them, then attach that folder to an issue on <a href="https://github.com/danieledge/coda/issues">GitHub</a>.</dd>
+      <dd>Turn on Control panel, Diagnostics. It saves a log of what happened in the <code>Coda\Diagnostics</code> folder on the card. Diagnostics uses the card and can drain the battery, so from Coda Beta 1.07 it turns itself off after 30 minutes unless you choose otherwise. The logs name the servers and web pages your programs used, but not passwords, keys or messages: look through them, then attach that folder to an issue on <a href="https://github.com/danieledge/coda/issues">GitHub</a>.</dd>
 
       <dt>My computer says the card has errors.</dt>
       <dd>Folders the netBook made itself (backups in <code>Backup\</code>, for example) can look damaged to a computer's disk check, because the netBook leaves old bytes after a folder's list. The netBook reads them correctly. Don't run First Aid, <code>fsck</code> or <code>chkdsk</code> repairs on the card: a repair can delete those folders.</dd>
