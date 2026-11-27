@@ -30,7 +30,7 @@ The [install guide](https://danieledge.github.io/coda/install.html) has the deta
 
 ## Status
 
-Coda Beta 1 is an early beta. It has been tried on a netBook with a serial device that behaves like a modem, and in an emulator. It has **not** been tried with a LAN (Ethernet) card yet. Expect rough edges, back up first, and use it at your own risk.
+Coda Beta 1 is an early beta. Expect rough edges, back up first, and use it at your own risk.
 
 Feedback is very welcome. Please [open an issue](https://github.com/danieledge/coda/issues): what works, what doesn't, and what you would like to see.
 
